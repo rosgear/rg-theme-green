@@ -1,0 +1,26 @@
+{
+    "name": "rosgear/rg-theme-green",
+    "description": "Theme \"Green\" for GePanel",
+    "keywords": ["rosgear", "gepanel", "theme"],
+    "homepage": "https://rosgear.ru/theme/rg-theme-green/",
+    "type": "theme",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Anton Tivonenko",
+            "email": "anton.tivonenko@gmail.com",
+            "homepage": "https://rosgear.ru/"
+        }
+    ],
+    "require": {
+        "rosgear/ge2-composer-plugin": "*"
+    },
+    "extra": {
+        "ge": {
+            "type": "backend",
+            "name": "green"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
