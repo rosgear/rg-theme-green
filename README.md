@@ -6,10 +6,10 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/rosgear/rg-theme-green.svg)](https://packagist.org/packages/rosgear/rg-theme-green)
 [![Author](https://img.shields.io/badge/author-anton.tivonenko@gmail.com-blue.svg)](mailto:anton.tivonenko@gmail)
 [![Source Code](https://img.shields.io/badge/source-rosgear/rg--theme--green-blue.svg)](https://github.com/rosgear/rg-theme-green)
-[![Software License](https://img.shields.io/badge/license-GPL--2.0-brightgreen.svg)](https://github.com/rosgear/rg-theme-green/blob/master/LICENSE)
+[![Software License](https://img.shields.io/badge/license-GPL--3.0-brightgreen.svg)](https://github.com/rosgear/rg-theme-green/blob/master/LICENSE)
 
 <a name="русский"></a>
-## <img src="https://github.com/rosgear/rg-theme-green/blob/master/thumb.png?raw=true" align="absmiddle"> Тема «Green» для Панели управления GePanel
+## <img src="https://raw.githubusercontent.com/rosgear/rg-theme-green/refs/heads/main/thumb.png" align="absmiddle"> Тема «Green» для Панели управления GePanel
 
 Тема оформления «Green» разработана специально для Панели управления GePanel. Она создана на базе нейтральной настраиваемой темы и адаптирована для классического набора инструментов Ext JS, что обеспечивает гибкость кастомизации и удобство работы с интерфейсом.
 
@@ -27,10 +27,10 @@
 - Bauhaus Md BT, Copyright 1990-1993 Bitstream Inc.
 - [Roboto Condensed](https://github.com/googlefonts/roboto-classic) под лицензией [SIL Open Font License, Version 1.1](https://openfontlicense.org/open-font-license-official-text/).
 
-<img src="https://github.com/rosgear/rg-theme-green/blob/master/screenshot.png?raw=true" width="100%">
+<img src="https://raw.githubusercontent.com/rosgear/rg-theme-green/refs/heads/main/screenshot.png" width="100%">
 
 <a name="english"></a>
-## <img src="https://github.com/rosgear/rg-theme-green/blob/master/thumb.png?raw=true" align="absmiddle"> Theme «Green» 
+## <img src="https://raw.githubusercontent.com/rosgear/rg-theme-green/refs/heads/main/thumb.png" align="absmiddle"> Theme «Green» 
 
 The «Green» theme was developed specifically for the GePanel Control Panel. It's built on a neutral, customizable theme and is adapted for the classic Ext JS toolkit, providing flexible customization and a user-friendly interface.
 
@@ -48,4 +48,4 @@ The theme includes:
 - Bauhaus Md BT, Copyright 1990-1993 Bitstream Inc.
 - [Roboto Condensed](https://github.com/googlefonts/roboto-classic) under license [SIL Open Font License, Version 1.1](https://openfontlicense.org/open-font-license-official-text/).
 
-<img src="https://github.com/rosgear/rg-theme-green/blob/master/screenshot.png?raw=true" width="100%">
+<img src="https://raw.githubusercontent.com/rosgear/rg-theme-green/refs/heads/main/screenshot.png" width="100%">
