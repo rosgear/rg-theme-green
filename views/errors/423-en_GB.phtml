@@ -1,0 +1,35 @@
+<?php
+/**
+ * GePanel
+ * 
+ * Шаблон ошибки 423 (Locked).
+ * 
+ * @author Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @copyright Copyright (c) 2015 RosGear
+ * @package Theme
+ * @subpackage Green
+ * @since 1.0
+ */
+?>
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Error 423 (Page Locked)</title>
+    <link type="image/png" href="<?= Ge::getAlias('@theme::/assets/ico/favicon.ico') ?>" rel="icon" sizes="16x16">
+    <link rel="stylesheet" href="<?= Ge::getAlias('@theme::/assets/css/error.min.css') ?>" />
+</head>
+
+<body class="g-error">
+    <div class="g-error__wrapper">
+        <h1 class="g-error__header">Error 423 (Page Locked)</h1>
+        <div class="g-error__text">
+            <p>Unfortunately, this page does not exist.</p>
+            <p>You probably do not have access or your IP address has been blacklisted.</p>
+        </div>
+    </div>
+</body>
+
+</html>

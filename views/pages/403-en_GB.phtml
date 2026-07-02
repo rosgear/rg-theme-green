@@ -1,0 +1,39 @@
+<?php
+/**
+ * GePanel
+ * 
+ * Шаблон ошибки 403 (Forbidden).
+ * 
+ * @author Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @copyright Copyright (c) 2015 RosGear
+ * @package Theme
+ * @subpackage Green
+ * @since 1.0
+ */
+?>
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Erorr 403 (Forbidden)</title>
+    <link type="image/png" href="<?= Ge::getAlias('@theme::/assets/ico/favicon.ico') ?>" rel="icon" sizes="16x16">
+    <link rel="stylesheet" href="<?= Ge::getAlias('@theme::/assets/css/error.min.css') ?>" />
+</head>
+
+<body class="g-error g-error_403">
+    <div class="g-error__wrapper">
+        <h1 class="g-error__header">Erorr 403 (Forbidden)</h1>
+        <div class="g-error__text">
+            <p>Access to this page is denied.</p>
+            <ol>
+                <li>Double click on the URL in the address bar of the browser, you may have entered the page address incorrectly.</li>
+                <li>Clear your browser's cache. The cached version of the page you were trying to visit could be causing the error. </li>
+                <li>Try to login again. </li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>

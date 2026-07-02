@@ -1,0 +1,33 @@
+<?php
+/**
+ * GePanel
+ * 
+ * Шаблон ошибки (общий).
+ * 
+ * @author Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @copyright Copyright (c) 2015 RosGear
+ * @package Theme
+ * @subpackage Green
+ * @since 1.0
+ */
+?>
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IP address is Blocked</title>
+    <link type="image/png" href="<?= Ge::getAlias('@theme::/assets/ico/favicon.ico') ?>" rel="icon" sizes="16x16">
+    <link rel="stylesheet" href="<?= Ge::getAlias('@theme::/assets/css/error.min.css') ?>" />
+</head>
+
+<body class="g-error g-error_connect">
+    <div class="g-error__wrapper">
+        <div class="g-error__text">
+            <div class="g-error__icon g-error__icon-connect"><?= $exception->getDispatch() ?></div>
+        </div>
+    </div>
+</body>
+
+</html>

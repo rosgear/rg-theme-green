@@ -1,0 +1,40 @@
+<?php
+/**
+ * GePanel
+ * 
+ * Шаблон ошибки 404 (Not Found).
+ * 
+ * @author Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @copyright Copyright (c) 2015 RosGear
+ * @package Theme
+ * @subpackage Green
+ * @since 1.0
+ */
+?>
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Error 404 (Not Found)</title>
+    <link type="image/png" href="<?= Ge::getAlias('@theme::/assets/ico/favicon.ico') ?>" rel="icon" sizes="16x16">
+    <link rel="stylesheet" href="<?= Ge::getAlias('@theme::/assets/css/error.min.css') ?>" />
+</head>
+
+<body class="g-error g-error_404">
+    <div class="g-error__wrapper">
+        <h1 class="g-error__header">Error 404 (Not Found)</h1>
+        <div class="g-error__text">
+            <p>You are trying to access a page that may have been deleted.</p>
+            <ol>
+                <li>Please check that the address you are entering is correct and/or correct it..</li>
+                <li>Clear your browser's cache and try the page again.</li>
+                <li>Go to the main page of the site and try to find the information you need by clicking on the links.</li>
+                <li>Look for the page in search engines - the page may have been published at a new address.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
