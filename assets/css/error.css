@@ -1,0 +1,104 @@
+/*!
+ * Ошибки.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Error
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @copyright Copyright (c) 2015 RosGear
+ * @version   1.0 Green Theme
+ * @date      Oct 01, 2017
+ */
+
+@import url("../fonts/robotocondensed.css");
+@import url("../fonts/bauhaus-md-bt-medium.css");
+
+* {
+    border: 0; 
+    padding: 0; 
+    margin: 0; 
+    outline: 0; }
+
+:focus { outline: 0; }
+
+a { 
+    color: #8e9699; 
+    text-decoration: none; }
+
+    a:hover { 
+        text-decoration: none; 
+        color: #747b7d; }
+
+p {
+    line-height: 1.5; }
+
+ol { 
+    margin-left: 20px; }
+
+ol li {
+    line-height: 1.5;
+    color: #665; }
+
+html { 
+    height: 100%; }
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    font: 14px "Roboto Condensed",arial,tahoma,sans-serif;
+    background: #fff; }
+
+body.g-error {
+    background: url("../img/background.jpg") left top;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font: 16px tahoma,arial,sans-serif;
+    color: #333; }
+
+.g-error__wrapper {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%) translateY(-40%);
+    width: 580px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px; }
+
+.g-error__header {
+    line-height: 94px;
+    text-align: center;
+    color: #665;
+    font-size: 28px;
+    font-weight: normal; }
+
+.g-error__title {
+    font-size: 37px;
+    font:44px "Bauhaus Md BT",arial,tahoma,sans-serif;
+    text-align: center;
+    margin-bottom: 50px; }
+
+.g-error__title span.name-part-1 { 
+    color: #5B9676; }
+
+.g-error__title span {
+    color: #818181;
+    padding: 0 5px 0 5px; }
+
+.g-error__title span.copyright {
+    font-size: 17px;
+    vertical-align: top;
+    margin-left: -12px; }
+
+.g-error__icon {
+    padding-left: 80px;
+    min-height: 64px;
+    background-size: 54px 54px;
+    background-position: left center;
+    background-repeat: no-repeat; }
+
+.g-error__icon-connect { background-image: url("../img/icon-error-connect.svg"); }
+.g-error__icon-db { background-image: url("../img/icon-error-db.svg"); }

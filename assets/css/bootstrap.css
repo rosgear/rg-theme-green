@@ -1,0 +1,90 @@
+/*!
+ * Загрузчик.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Bootstrap
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @copyright Copyright (c) 2015 RosGear
+ * @version   1.0 Green Theme
+ * @date      Oct 01, 2017
+ */
+
+@import url("../fonts/robotocondensed.css");
+@import url("../fonts/bauhaus-md-bt-medium.css");
+
+html {
+    height: 100%; }
+
+/* Логотип */
+.g-bs-mask__logo {
+    width: 100%;
+    background: url("../img/logo-bootstrap.png") no-repeat left center;
+    font:54px "Bauhaus Md BT",arial,tahoma,sans-serif;
+    line-height: 85px;
+    color: #afafaf;
+    margin-bottom: 50px;
+    padding-left: 100px; }
+
+    .g-bs-mask__logo span:first-child {
+        padding: 0 5px; }
+
+    .g-bs-mask__logo span.name-part-1 {
+        color: #1D7044; }
+
+    .g-bs-mask__logo span.copyright {
+        vertical-align: top;
+        font-size: 18px;
+        line-height: 40px; }
+
+/* Обёртка */
+.g-bs-mask__wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+     -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 400px;
+    min-height: 200px; }
+
+/* Прогресс */
+.g-bs-mask__loader,
+.g-bs-mask__loader:after {
+    border-radius: 50%;
+    width: 10em;
+    height: 10em; }
+
+.g-bs-mask__loader {
+    position: relative;
+    margin: 0 auto;
+    font-size: 10px;
+    text-indent: -9999em;
+    border-top: 1.1em solid rgba(33, 115, 70, 0.6);
+    border-right: 1.1em solid rgba(33, 115, 70, 0.3);
+    border-bottom: 1.1em solid rgba(33, 115, 70, 0.05);
+    border-left: 1.1em solid #ffffff;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load8 1.1s infinite linear;
+    animation: load8 1.1s infinite linear; }
+
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+}
