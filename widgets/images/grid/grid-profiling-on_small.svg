@@ -1,0 +1,9 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+  <g id="icon">
+    <path d="M15.5,0.5v15H0.5V0.5H15.5z" fill="none" stroke="#6D6E71" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" stroke-linejoin="round"/>
+    <path d="M15,15h-3V1h3V15z" fill="#C2D3E6"/>
+    <path d="M11,15V1h1v14H11z" fill="#797979"/>
+    <path d="M1,15V1h10v14H1z" fill="#FFFFFF"/>
+    <path d="M7.304,10.204l-0.707,-0.707L8.093,8H4V7h4.193L6.596,5.404l0.707,-0.707l2.754,2.754L7.304,10.204z" fill="#6D6E71"/>
+  </g>
+</svg>

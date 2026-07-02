@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512">
+    <defs>
+        <filter id="hover">
+            <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values="0.30 0 0 0 0 0 0.51 0 0 0 0 0 0.72 0 0 0 0 0 1 0"/>
+        </filter>
+        <filter id="color-default">
+            <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values="0.60 0 0 0 0 0 0.60 0 0 0 0 0 0.60 0 0 0 0 0 1 0"/>
+        </filter>
+        <filter id="color-active">
+            <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values="0.30 0 0 0 0 0 0.51 0 0 0 0 0 0.72 0 0 0 0 0 1 0"/>
+        </filter>
+        <filter id="color-inactive">
+            <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values="0.88 0 0 0 0 0 0.88 0 0 0 0 0 0.88 0 0 0 0 0 1 0"/>
+        </filter>
+        <filter id="color-red">
+            <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values="0.79 0 0 0 0 0 0.31 0 0 0 0 0 0.31 0 0 0 0 0 1 0"/>
+        </filter>
+        <filter id="color-white">
+            <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values="1.00 0 0 0 0 0 1.00 0 0 0 0 0 1.00 0 0 0 0 0 1 0"/>
+        </filter>
+        <filter id="color-success">
+            <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values="0.13 0 0 0 0 0 0.45 0 0 0 0 0 0.27 0 0 0 0 0 1 0"/>
+        </filter>
+        <filter id="base-color">
+            <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values="0.26 0 0 0 0 0 0.53 0 0 0 0 0 0.38 0 0 0 0 0 1 0 "/>
+        </filter>
+        <filter id="neutral-dark-color">
+            <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values="0.40 0 0 0 0 0 0.40 0 0 0 0 0 0.40 0 0 0 0 0 1 0 "/>
+        </filter>
+    </defs>
+</svg>
+        
+        

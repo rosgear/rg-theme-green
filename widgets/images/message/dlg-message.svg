@@ -1,0 +1,8 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+  <g id="icon">
+    <path d="M30.972,3L7.883,21.043l3.423,7.905L30.972,3z" fill-rule="evenodd" fill="#FFFFFF"/>
+    <path d="M1.249,18.187L30.972,3L7.902,21.096l-6.575,-2.163C0.994,18.823,0.944,18.342,1.249,18.187z" fill-rule="evenodd" fill="#3E79B4"/>
+    <path d="M12.199,22.904l-0.893,6.045l3.671,-4.918l5.588,2.274c0.425,0.176,0.893,-0.022,1.069,-0.453L30.972,3L12.203,22.897C12.201,22.899,12.2,22.901,12.199,22.904z" fill-rule="evenodd" fill="#3E79B4"/>
+    <polygon points="9.222,19.997 7.883,21.043 11.306,28.949 12.238,27.719" fill-rule="evenodd" fill="#3E79B4" stroke-linejoin="miter"/>
+  </g>
+</svg>
