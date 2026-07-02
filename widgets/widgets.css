@@ -1,0 +1,115 @@
+/*!
+ * Главный сценарий.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * Виджеты для которых приминяются UI:
+ *    - xtype = label, ui = fieldset-comment, комментарий для набора полей (fieldset);
+ *    - xtype = label, ui = comment, комментарий;
+ *    - xtype = label, ui = header, заголовок (с заливкой фона) разделения полей;
+ *    - xtype = label, ui = header-line, заголовок с разделителем;
+ *    - xtype = label, ui = note, заметки;
+ *    - xtype = displayfield, ui = parameter, значение параметра конфигурации;
+ *    - xtype = displayfield, ui = parameter-head, значение основного параметра конфигурации;
+ *    - xtype = toolbar, ui = breadcrumb , хлебные крошки;
+ *    - xtype = button, ui = breadcrumb , хлебные крошки;
+ *    - xtype = button, ui = form-tool, кнопка "иструмент" панели формы;
+ *    - xtype = button, ui = form-info, кнопка "информация" панели формы;
+ *    - xtype = button, ui = form-notice, кнопка "предупреждение" панели формы;
+ *    - xtype = button, ui = form-close,  кнопка "закрыть, отмена..." панели формы;
+ *    - xtype = button, ui = form, кнопка "по умолчанию" панели формы;
+ * 
+ * @package   Widgets
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+@import 'module.css';
+@import 'frame.css';
+@import 'form.css';
+@import 'menu.css';
+@import 'grid.css';
+@import 'gridtree.css';
+@import 'tree.css';
+@import 'contacts.css';
+@import 'shortcuts.css';
+@import 'message.css';
+@import 'window.css';
+@import 'portal.css';
+@import 'workspace.css';
+@import 'override.css';
+
+
+/* Заливка угла заднего фона */
+.g-background_corner {
+    background: #fff url("images/background/corner-background.jpg") no-repeat right bottom;
+}
+
+
+/** 
+ * Подсказка на вкладке виджета.
+ * Ext.tip.ToolTip.cls = "g-tab-tip [g-tab-tip_icon]" (@app/view/tab/Widgets.js)
+ */
+.g-tab-tip {
+    border-width: 1px;
+    border-color: #cccccc;
+    border-radius: 4px;
+}
+.g-tab-tip_icon {
+    min-height: 80px;
+}
+.g-tab-tip_icon .g-tab-tip__body {
+    position: relative;
+    min-height: 80px;
+    padding-left: 73px;
+}
+.g-tab-tip .x-tip-anchor {
+    display: none !important;
+}
+.g-tab-tip__title {
+    font: bold 12px/16px helvetica, arial, verdana, sans-serif;
+    margin-bottom: 4px;
+    color: #333;
+}
+.g-tab-tip__text {
+    font-size: 13px;
+    font-weight: normal;
+    font-family: "Roboto Condensed", helvetica, arial, verdana, sans-serif;
+    color: #666666;
+}
+.g-tab-tip__icon {
+    position: absolute;
+    left: -70px;
+    top: 5px;
+    width: 64px;
+    height: 64px;
+}
+
+
+/**
+ * Панель вкладок виджетов.
+ * Ext.tab.Panel
+ * Ge.view.tab.Widgets.cls = "g-widgets"
+ */
+.g-widgets {}
+/**
+ * Заливка заднего фона вкладок панели виджетов.
+ * Ge.view.tab.Widgets.bodyCls = "g-widgets__body"
+ */
+.g-widgets__body {
+    background: #e7e7e7 url("images/logo/logo-gray.svg") no-repeat center center;
+}
+
+
+/** 
+ * Вкладка виджета (модуля).
+ * Ext.panel.Panel.cls = "g-widget-tab [g-widget-tab_load]"
+ */
+.g-widget-tab {}
+/* Вкладки компонентов */
+.g-widget-tab.g-widget-tab_load .x-panel .x-autocontainer-innerCt {
+    background: url(images/loading/loading.gif) no-repeat center center;
+}

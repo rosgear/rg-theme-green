@@ -1,0 +1,72 @@
+/*!
+ * Виджет панели разделов.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @widget    Ext.panel.Panel (@app/view/main/Main.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Панель разделов.
+ * Ext.panel.Panel
+ * Ext.panel.Panel.cls = "g-partitionbar"
+ *
+ * .g-partitionbar {}
+ */
+/**
+ * Тело панели разделов.
+ * Ext.panel.Panel.bodyCls = "g-partitionbar__body"
+ */
+.g-partitionbar__body {
+    background: #e7e7e7; }
+
+
+/**
+ * Разделы меню (панель инструментов).
+ * Ext.toolbar.Toolbar.cls = "g-partitionbar__toolbar"
+ */
+.g-partitionbar-toolbar {
+    background: #e7e7e7; }
+
+
+/**
+ * Кнопки разделов меню (панели инструментов).
+ * Ext.toolbar.Item.cls = "g-partitionbar-btn"
+ */
+.g-partitionbar-btn {
+    border: 0 none;
+    border-radius: 0 !important;
+    background: #e7e7e7; }
+
+    .g-partitionbar-btn .x-btn-inner {
+        font-weight: normal; }
+
+    .g-partitionbar-btn .icon-font {
+        font-size: 21px; 
+        color: #afafaf; }
+
+    .g-partitionbar-btn.x-btn-over {
+        background: #C1CFC8; }
+
+    .g-partitionbar-btn.x-btn.x-btn-menu-active,
+    .g-partitionbar-btn.x-btn-focus.x-btn-over,
+    .g-partitionbar-btn.x-btn-focus {
+        background: #86bfa0;
+        border: 0 none !important; }
+
+    .g-partitionbar-btn.x-btn-over .icon-font,
+    .g-partitionbar-btn.x-btn.x-btn-menu-active .icon-font,
+    .g-partitionbar-btn.x-btn-focus.x-btn-over .icon-font,
+    .g-partitionbar-btn.x-btn-focus .icon-font {
+        color: #217346; }
+
+    .g-partitionbar-btn .x-btn-arrow-right::after {
+        width: 15px;
+        padding-right: 15px;
+        background-image: url("images/button/default-toolbar-small-s-r-arrow.png"); }

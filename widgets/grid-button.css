@@ -1,0 +1,131 @@
+/*!
+ * Виджеты кнопок панели инструментов сетки.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @widget    Ge.view.grid.button.Button (@app/view/grid/button/Button.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Значок добавления записи.
+ * Ge.view.grid.button.Button.iconCls = "g-icon_grid-add__..."
+ */
+.g-icon_grid-add_large,
+.g-icon_grid-add_medium,
+.g-icon_grid-add { background-image: url("images/grid/grid-add.svg"); }
+.g-icon_grid-add_small { background-image: url("images/grid/grid-add_small.svg"); }
+/**
+ * Значок удаления записи.
+ * Ge.view.grid.button.Button.iconCls = "g-icon_grid-delete__..."
+ */
+.g-icon_grid-delete_large,
+.g-icon_grid-delete_medium,
+.g-icon_grid-delete { background-image: url("images/grid/grid-delete.svg"); }
+.g-icon_grid-delete_small { background-image: url("images/grid/grid-delete_small.svg"); }
+/**
+ * Значок правки записи.
+ * Ge.view.grid.button.Button.iconCls = "g-icon_grid-edit__..."
+ */
+.g-icon_grid-edit_large,
+.g-icon_grid-edit_medium,
+.g-icon_grid-edit { background-image: url("images/grid/grid-edit.svg"); }
+.g-icon_grid-edit_small { background-image: url("images/grid/grid-edit_small.svg"); }
+/**
+ * Значок очистки записей.
+ * Ge.view.grid.button.Button.iconCls = "g-icon_grid-cleanup__..."
+ */
+.g-icon_grid-cleanup_large,
+.g-icon_grid-cleanup_medium,
+.g-icon_grid-cleanup { background-image: url("../assets/icons/svg/basic/cleanup.svg"); }
+.g-icon_grid-cleanup_small { background-image: url("../assets/icons/svg/basic/cleanup_small.svg"); }
+/**
+ * Значок выделения записей.
+ * Ge.view.grid.button.Button.iconCls = "g-icon_grid-select__..."
+ */
+.g-icon_grid-select_large,
+.g-icon_grid-select_medium,
+.g-icon_grid-select { background-image: url("images/grid/grid-select.svg"); }
+.g-icon_grid-select_small { background-image: url("images/grid/grid-select_small.svg"); }
+/* выделить все записи */
+.g-icon_grid-select-all_small {
+    background-image: url("images/grid/grid-select-all_small.svg");
+}
+/* убрать выделение записей */
+.g-icon_grid-select-remove_small {
+    background-image: url("images/grid/grid-select-remove_small.svg");
+}
+/* инвертировать выделение записей */
+.g-icon_grid-select-invert_small {
+    background-image: url("images/grid/grid-select-invert_small.svg");
+}
+/**
+ * Значок обновления записей.
+ * Ge.view.grid.button.Button.iconCls = "g-icon_grid-refresh__..."
+ */
+.g-icon_grid-refresh_large,
+.g-icon_grid-refresh_medium,
+.g-icon_grid-refresh { background-image: url("../assets/icons/svg/basic/refresh.svg"); }
+.g-icon_grid-refresh_small { background-image: url("../assets/icons/svg/basic/refresh_small.svg"); }
+/**
+ * Значок помощи.
+ * Ge.view.grid.button.Button.iconCls = "g-icon_grid-help__..."
+ */
+.g-icon_grid-help_large,
+.g-icon_grid-help_medium,
+.g-icon_grid-help { background-image: url("../assets/icons/svg/basic/help.svg"); }
+.g-icon_grid-help_small { background-image: url("../assets/icons/svg/basic/help_small.svg"); }
+/**
+ * Значок поиска записей.
+ * Ge.view.grid.button.Button.iconCls = "g-icon_grid-search__..."
+ */
+.g-icon_grid-search_large,
+.g-icon_grid-search_medium,
+.g-icon_grid-search { background-image: url("../assets/icons/svg/basic/search.svg"); }
+.g-icon_grid-search_small { background-image: url("../assets/icons/svg/basic/search_small.svg"); }
+/**
+ * Значок профилирования записи (включить / выключить).
+ * Ge.view.grid.button.Button.iconCls = "g-icon_grid-profiling-..."
+ */
+.g-icon_grid-profiling-on_large,
+.g-icon_grid-profiling-on_medium,
+.g-icon_grid-profiling-on { background-image: url("images/grid/grid-profiling-on.svg"); }
+.g-icon_grid-profiling-on_small { background-image: url("images/grid/grid-profiling-on_small.svg"); }
+.g-icon_grid-profiling-off_large,
+.g-icon_grid-profiling-off_medium,
+.g-icon_grid-profiling-off { background-image: url("images/grid/grid-profiling-off.svg"); }
+.g-icon_grid-profiling-off_small { background-image: url("images/grid/grid-profiling-off_small.svg"); }
+/**
+ * Значок столбцов (скрыть / показать).
+ * Ge.view.grid.button.Button.iconCls = "grid-toggle-columns-..."
+ */
+.g-icon_grid-togglec-on_large,
+.g-icon_grid-togglec-on_medium,
+.g-icon_grid-togglec-on { background-image: url("images/grid/grid-toggle-columns-on.svg"); }
+.g-icon_grid-togglec-on_small { background-image: url("images/grid/grid-toggle-columns-on_small.svg"); }
+.g-icon_grid-togglec-off_large,
+.g-icon_grid-togglec-off_medium,
+.g-icon_grid-togglec-off { background-image: url("images/grid/grid-toggle-columns-off.svg"); }
+.g-icon_grid-togglec-off_small { background-image: url("images/grid/grid-toggle-columns-off_small.svg"); }
+/* столбцы списка */
+.g-icon_grid-columns_large,
+.g-icon_grid-columns_medium,
+.g-icon_grid-columns { background-image: url("images/grid/grid-columns.svg"); }
+.g-icon_grid-columns_small { background-image: url("images/grid/grid-columns_small.svg"); }
+/**
+ * Значок фильтрации записей (включить / выключить).
+ * Ge.view.grid.button.Button.iconCls = "g-icon_grid-filter-..."
+ */
+.g-icon_grid-filter-on_large,
+.g-icon_grid-filter-on_medium,
+.g-icon_grid-filter-on { background-image: url("../assets/icons/svg/basic/filter-on.svg"); }
+.g-icon_grid-filter-off_large,
+.g-icon_grid-filter-off_medium,
+.g-icon_grid-filter-off { background-image: url("../assets/icons/svg/basic/filter.svg"); }
+.g-icon_grid-filter-on_small { background-image: url("../assets/icons/svg/basic/filter-on_small.svg"); }
+.g-icon_grid-filter-off_small { background-image: url("../assets/icons/svg/basic/filter_small.svg"); }

@@ -1,0 +1,126 @@
+/*!
+ * Виджет плавающего фрейма.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Плавающий фрейм.
+ * <iframe class="g-frame [g-frame_fit]">...
+ */
+.g-frame_fit {
+    width: 100%;
+    height: 100%; }
+
+.g-frame__body { 
+    border: 0; }
+
+.g-frame__body_white {
+     background: #fff;  }
+
+    .g-frame__body > .x-panel-body {
+        padding: 20px;
+        overflow-y: auto; }
+
+.g-frame h1,
+.g-frame h2,
+.g-frame h3,
+.g-frame h4 {
+    font-family: "Roboto Condensed", helvetica, arial, verdana, sans-serif;
+    font-weight: 300;
+    color: #217346;
+    margin:  15px 0 5px 0; }
+
+.g-frame h2 { margin-top: 30px; }
+.g-frame h1 { font-size: 24px; }
+.g-frame h2 { font-size: 22px; }
+.g-frame h3 { font-size: 19px; }
+.g-frame h4 {
+    font-size: 15px;
+    color: #666666;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-top: 5px; }
+
+    .g-frame h1 > span,
+    .g-frame h2 > span,
+    .g-frame h3 > span,
+    .g-frame h4 > span { color: #665 }
+
+.g-frame .lc { 
+    text-transform: lowercase; }
+
+.g-frame .uc { 
+    text-transform: uppercase; }
+
+.g-frame label { 
+    color: #666666; }
+
+.g-frame li label {
+    color: #217346;
+    font-weight: bold; }
+
+.g-frame ul.none {
+    list-style: none;
+    margin-top: 3px;
+    margin-bottom: 3px; 
+    margin-left: 0;
+    padding-left: 15px; }
+
+.g-frame p { 
+    margin: 6px 10px 6px 5px;
+    font-size: 15px; }
+
+.g-frame a {
+    text-decoration: none;
+    color: #4D81B8; }
+
+    .g-frame a:hover {
+        text-decoration: underline; }
+
+.g-frame hr {
+    border: 0;
+    border-bottom: 1px solid #E7E7E7; }
+
+.g-frame-title { 
+    background: #e7e7e7; }
+
+    .g-frame-title h1 {
+        margin-top: 0;
+        color: #333;
+        line-height: 1;
+        padding: 5px 10px 10px 15px; }
+
+.g-frame button {
+    transition: all 0.1s ease-in;
+    background-color: /*#217346*/#f5f5f5;
+    border-radius: 3px;
+    color: #665;
+    padding: 3px 10px 5px 5px;
+    border: 1px solid #c1c1c1;
+    max-width: 100%;
+    font: 13px/16px "Roboto Condensed", helvetica, arial, verdana, sans-serif;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer; }
+
+    .g-frame button:hover {
+        background-color: #217346;
+        border-color: #217346;
+        color: #fff; }
+
+    .g-frame button:active {
+        background-color: #86bfa0;
+        border-color: #86bfa0;
+        color: #fff; }
+
+    .g-frame button .icon-font {
+        font-size: 14px;
+        margin-right: 4px; }

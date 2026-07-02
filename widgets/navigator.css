@@ -1,0 +1,194 @@
+/*!
+ * Виджет панели навигации (навигатор).
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @widget    Ge.view.navigator.Info (@app/view/navigator/Info.js),
+ *            Ge.view.navigator.Modules (@app/view/navigator/Modules.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Панель навигации.
+ * Ext.panel.Panel
+ * Ext.panel.Panel.cls = "g-navigator [g-navigator_sidebar] [g-navigator_modules] [g-navigator_info]"
+ */
+.g-navigator {
+    font-size: 13px; }
+
+/* тень панели навигации */
+.g-navigator_sidebar.x-border-region-slide-in {
+    -webkit-box-shadow: 2px 0px 3px 0px rgba(0,0,0,0.65);
+    -moz-box-shadow: 2px 0px 3px 0px rgba(0,0,0,0.65);
+    box-shadow: 2px 0px 3px 0px rgba(0,0,0,0.65); }
+
+
+/**
+ * Заливка заднего фона вкладок панели навигации.
+ * Ext.tab.Panel
+ * Ext.tab.Panel.bodyCls = "g-navigator__body"
+ */
+/* Задний фон вкладки "Модули" */
+.g-navigator_modules .g-navigator__body {
+    background: url("images/navigator/modules-background.svg") no-repeat center/80%; }
+
+/* Задний фон вкладки "Информация" */
+.g-navigator_info .g-navigator__body {
+    background: url("images/navigator/info-background.svg") no-repeat center/80%; }
+
+
+/**
+ * Значки вкладок панели навигации.
+ */
+/* Значок вкладки "Модули" */
+.g-icon_navigator-tab-modules {
+    background-image: url("images/module/module-white.svg");
+    background-size: 16px; }
+
+/* Значок вкладки "Информация" */
+.g-icon_navigator-tab-info {
+    background-image: url("images/navigator/tab-info.svg");
+    background-size: 16px; }
+
+
+/**
+ * Контент панели навигации.
+ */
+/* Заголовки */
+.g-navigator h1,
+.g-navigator h2,
+.g-navigator h3,
+.g-navigator h4,
+.g-navigator h5, 
+.g-navigator h6 {
+    color: #217346;
+    text-transform: uppercase;
+    margin-top: 3px;
+    margin-bottom: 3px; }
+
+.g-navigator h1 {
+    font-size: 13px;
+    text-align: center; }
+
+.g-navigator h2 {
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: uppercase; }
+
+.g-navigator h3,
+.g-navigator h4,
+.g-navigator h5,
+.g-navigator h6 {
+    font-size: 12px; }
+
+/* Ссылки */
+.g-navigator a {
+    color: #4D81B8;
+    text-decoration: none;
+    transition: all 0.3s; }
+
+    .g-navigator a:hover {
+        color: #217346; }
+
+/* Метки */
+.g-navigator label {
+    color: #666666;
+    font-size: 13px; }
+
+/* Наборы полей */
+.g-navigator fieldset {
+    border: 0;
+    padding-left: 8px;
+    margin: 5px 0 0 0; }
+
+    .g-navigator fieldset legend {
+        font-size: 16px;
+        color: #217346;
+        margin-left: -8px; }
+
+/* Изображение */
+.g-navigator__image {
+    text-align: center;
+    min-height: 176px; }
+
+    .g-navigator__image > span {
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+        overflow: hidden; }
+
+.g-navigator__image_round > span img {
+    width: 100%;
+    border-radius: 50%; }
+
+.g-navigator__image_border > span img {
+    border: 3px solid #e9e9eb; }
+
+/* если векторное изображение */
+.g-navigator__image_border > span img.g-icon-svg { 
+    width: 130px;
+    background-size: 77%; }
+
+/* Узел дерева сетки */
+.g-navigator .x-tree-node-text {
+    font: normal 12px/16px helvetica, arial, verdana, sans-serif;
+    color: #666666; }
+
+
+/**
+ * Кнопки панели навигации.
+ * <button class="g-navigator__button [g-navigator__button_long] [g-navigator__button_default]">...
+ */
+.g-navigator__button {
+    transition: all 0.15s ease-in;
+    border-radius: 3px;
+    border: 0 none;
+    padding: 5px 10px 5px 5px;
+    max-width: 100%;
+    font: 13px/16px "Roboto Condensed", helvetica, arial, verdana, sans-serif;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center; }
+
+/* если кнопка ссылка <a class="g-navigator__button ..."... */
+a.g-navigator__button {
+    display: block; }
+
+/* Изображение кнопки */
+.g-navigator__button img {
+    margin: 0 3px 0 3px; }
+
+/* Глиф кнопки */
+.g-navigator__button .fa {
+    font-size: 14px;
+    margin-right: 4px; }
+
+/* Кнопка по ширине */
+.g-navigator__button_long {
+    width: 100%; }
+
+a.g-navigator__button_default,
+.g-navigator__button_default {
+    background-color: #e1e1e1;
+    color: #665; }
+
+    a.g-navigator__button_default:hover,
+    .g-navigator__button_default:hover {
+        background-color: #217346;
+        border-color: #217346;
+        color: #fff; }
+
+/* значок кнопки слева */
+.g-navigator__icon_left {
+    float: left; }
+
+/* значок кнопки справа */
+.g-navigator__icon_right {
+    float: right; }

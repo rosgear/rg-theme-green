@@ -1,0 +1,195 @@
+/*!
+ * Виджет панели портала.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @widget    Ge.view.portal.Panel (@app/view/portal/Panel.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Портал.
+ * Ge.view.portal.Panel.cls = "g-portal"
+ */
+.g-portal-body { padding: 0 0 0 8px; }
+/* столбцы должны быть вертикально заполнены, чтобы избежать потери размеров, когда они пусты */
+.g-portal .g-portal-column { padding: 8px 8px 0 0; }
+/* перетягивание панели */
+ .g-portal .x-panel-dd-spacer {
+    border: 2px dashed #afafaf;
+    background: rgba(177, 206, 190, 0.1);
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    margin-top: 5px; }
+
+.g-portal .x-panel-body-default { background: none; }
+
+
+/**
+ * Портлет.
+ * Ge.view.portal.Portlet.cls = "g-portlet ..."
+ */
+.g-portlet {
+    margin-bottom:10px;
+    padding: 1px;
+    border-radius: 5px; }
+/* заголовок панели */
+.g-portlet .x-panel-header-default-horizontal { padding: 5px 10px 5px 10px; }
+.g-portlet .x-panel-header-default-vertical { padding: 10px 5px 10px 5px; }
+/* заголовок цветом панели */
+.g-portlet.color-noheader .x-panel-header-default { background: none; }
+.g-panel-ghost { z-index: 1; }
+.g-border-layout-ct { background: #DFE8F6; }
+
+
+/**
+ * Белый цвет панели.
+ * Ge.view.portal.Portlet.cls = "g-portlet color-white..."
+ */
+/* цвет текста заголовка панели */
+.g-portlet.color-white .x-panel-header-title-default { color: #848484; }
+  /* цвет заголовка панели */
+ .g-portlet.color-white.x-panel-default { background: rgba(255, 255, 255, 0.5); }
+ .g-portlet.color-white .x-panel-header-default { background: rgba(255, 255, 255, 0.8); }
+ .g-portlet.color-white.color-noheader .x-panel-header-default { background: none; }
+ /* инструменты */
+ .g-portlet.color-white .x-tool-img { background-image: url("images/tools/tool-sprites-light.png"); }
+
+/**
+ * Зеленый цвет панели.
+ * Ge.view.portal.Portlet.cls = "g-portlet color-green..."
+ */
+/* цвет текста заголовка панели */
+.g-portlet.color-green .x-panel-header-title-default { color: #217346; }
+/* цвет заголовка панели */
+.g-portlet.color-green.x-panel-default { background: rgba(193, 207, 200, 0.3); }
+.g-portlet.color-green .x-panel-header-default { background: rgba(193, 207, 200, 0.8); }
+.g-portlet.color-green.color-noheader .x-panel-header-default { background: none; }
+/* инструменты */
+.g-portlet.color-green .x-tool-img { background-image: url("images/tools/tool-sprites-green.png"); }
+
+/**
+ * Красный цвет панели.
+ * Ge.view.portal.Portlet.cls = "g-portlet color-red..."
+ */
+/* цвет текста заголовка панели */
+.g-portlet.color-red .x-panel-header-title-default { color: #d74545; }
+/* цвет заголовка панели */
+.g-portlet.color-red.x-panel-default { background: rgba(230, 200, 200, 0.3); }
+.g-portlet.color-red .x-panel-header-default { background: rgba(230, 200, 200, 0.8); }
+.g-portlet.color-red.color-noheader .x-panel-header-default { background: none; }
+/* инструменты */
+.g-portlet.color-red .x-tool-img { background-image: url("images/tools/tool-sprites-dark.png"); }
+
+/**
+ * Сининй цвет панели.
+ * Ge.view.portal.Portlet.cls = "g-portlet color-blue..."
+ */
+/* цвет текста заголовка панели */
+.g-portlet.color-blue .x-panel-header-title-default { color: #3e79b4; }
+/* цвет заголовка панели */
+.g-portlet.color-blue.x-panel-default { background: rgba(209, 219, 229, 0.3); }
+.g-portlet.color-blue .x-panel-header-default { background: rgba(209, 219, 229, 0.5); }
+.g-portlet.color-blue.color-noheader .x-panel-header-default { background: none; }
+/* инструменты */
+.g-portlet.color-blue .x-tool-img { background-image: url("images/tools/tool-sprites-dark.png"); }
+
+/**
+ * Желтый цвет панели.
+ * Ge.view.portal.Portlet.cls = "g-portlet color-yellow..."
+ */
+/* цвет текста заголовка панели */
+.g-portlet.color-yellow .x-panel-header-title-default { color: #dc9d39; }
+/* цвет заголовка панели */
+.g-portlet.color-yellow.x-panel-default { background: rgba(234, 183, 101, 0.1); }
+.g-portlet.color-yellow .x-panel-header-default { background: rgba(234, 183, 101, 0.2); }
+.g-portlet.color-yellow.color-noheader .x-panel-header-default { background: none; }
+/* инструменты */
+.g-portlet.color-yellow .x-tool-img { background-image: url("images/tools/tool-sprites-dark.png"); }
+
+/**
+ * Отсутствие цвета панели.
+ * Ge.view.portal.Portlet.cls = "g-portlet color-none..."
+ */
+/* цвет текста заголовка панели */
+.g-portlet.color-none .x-panel-header-title-default { color: #848484; }
+/* цвет заголовка панели */
+.g-portlet.color-none.x-panel-default { background: inherit; }
+.g-portlet.color-none .x-panel-header-default { background: inherit; }
+/* инструменты */
+.g-portlet.color-none .x-tool-img { background-image: url("images/tools/tool-sprites-light.png"); }
+
+
+/**
+ * Цвета состояния панели.
+ * Ge.view.portal.Portlet.cls = "g-portlet state-color-..."
+ */
+ .g-portlet.color-state-red { border-bottom: 3px solid rgba(179, 66, 44, 0.8); }
+ .g-portlet.color-state-blue { border-bottom: 3px solid rgba(62, 121, 180, 0.8); }
+ .g-portlet.color-state-yellow { border-bottom: 3px solid rgba(234, 183, 101, 0.8); }
+ .g-portlet.color-state-green { border-bottom: 3px solid rgba(33, 115, 70, 0.8); }
+
+
+/**
+ * Содержимое панели.
+ */
+.g-portlet h2 {
+    font-family: "Roboto Condensed", helvetica, arial, verdana, sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    color: #217346;
+    margin: 6px 10px 0 0; }
+
+.g-portlet p {
+    color: #333; 
+    font-size: 14px;
+    margin: 4px 0 4px 0;
+    padding-left: 10px; }
+
+.g-portlet label { 
+    color: #bbbbbb; }
+
+.g-portlet a {
+    font-size: 13px;
+    color: #4D81B8;
+    text-decoration: none; }
+
+.g-portlet .fa-check {
+    color: #559471;
+    font-size: 17px; }
+
+.g-portlet .x-mask {
+    background-image: url("images/loading/loading.gif");
+    background-position: center center;
+    background-repeat: no-repeat; }
+
+.g-portlet button {
+    transition: all 0.2s ease-in;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    color: #665;
+    padding: 3px 10px 5px 10px;
+    margin: 3px;
+    border: 1px solid #c1c1c1;
+    max-width: 100%;
+    font: 13px/16px "Roboto Condensed", helvetica, arial, verdana, sans-serif;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer; }
+
+    .g-portlet button:hover {
+        background-color: #217346;
+        border-color: #217346;
+        color: #fff; }
+
+    .g-portlet button .fa {
+        font-size: 14px;
+        margin-right: 4px; }
+
+    .g-portlet button:hover .g-icon-svg {
+        filter: url("../assets/icons/svg-mask/svg-filter.svg#color-white"); }

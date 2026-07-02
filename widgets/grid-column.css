@@ -1,0 +1,163 @@
+/*!
+ * Виджеты столбцов панели сетки.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @widget    Ge.view.grid.column.Checker, 
+ *            Ge.view.grid.column.MediaLink,
+ *            Ge.view.grid.column.Editor,
+ *            Ge.view.grid.column.Control,
+ *            Ge.view.grid.column.DeleteAction
+ *            Ge.view.grid.column.MenuAction (@app/view/grid/column/Column.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Значки в заголовках столбцов сетки.
+ */
+/* Значок информация о записи */
+.g-icon_gridcolumn-info {
+    background-image: url("images/grid/gridcolumn-info.svg");
+    vertical-align: sub;
+    background-size: 14px 14px;
+}
+/**
+ * Значок загрузки.
+ * Ext.grid.column.Column.cls = "g-icon_gridcolumn-loading"
+ */
+.g-icon_gridcolumn-loading {
+    padding-left: 17px;
+    background-image: url("images/loading/loading_small.gif");
+    background-position: 5px center;
+    background-repeat: no-repeat;
+}
+
+
+/**
+ * Контекстное меню столбца.
+ * Ge.view.grid.button.Columns
+ * <span class="g-menu-subtext">...
+ */
+.g-menu-subtext {
+    color: #8F8F8F;
+    font-size: 12px; }
+
+    .g-menu-subtext:after {
+        content: ")";
+        display: inline-block; }
+
+    .g-menu-subtext:before {
+        content: "(";
+        display: inline-block; }
+
+.g-menu-item-separator {
+    margin: 7px 2px 7px 2px;
+    height: 50px;
+    width: 1px;
+    border-top: 0 none;
+    border-left: 1px solid #e1e1e1; }
+
+
+/**
+ * Столбец "Выделенная надпись".
+ * <td class="g-gridcolumn-label__td ...">...
+ */
+.g-gridcolumn-label__td {
+    color: #666666; }
+
+
+/**
+ * Столбец "Переключатель".
+ * Ge.view.grid.column.Checker
+ * <span class="g-gridcolumn-checker [checked]">...
+ */
+.g-gridcolumn-checker {
+    display: block;
+    width: 100%;
+    height: 18px;
+    background: url(images/grid/gridcolumn-uncheck.svg) no-repeat center center; }
+
+    .g-gridcolumn-checker.checked { 
+        background: url(images/grid/gridcolumn-check.svg) no-repeat center center; }
+
+
+/**
+ * Столбец "Медиаресурс".
+ * Ge.view.grid.column.MediaLink
+ * Ge.view.grid.column.MediaLink.tdCls = "g-gridcolumn-medialink__td"
+ */
+.g-gridcolumn-medialink__td.x-grid-dirty-cell {
+    background: none; }
+
+
+/**
+ * Столбец "Редактор".
+ * Ge.view.grid.column.Editor
+ * Ge.view.grid.column.Editor.tdCls = "g-gridcolumn-editor__td"
+ */
+.g-gridcolumn-editor__td {
+    padding-top: 1px; }
+
+    .g-gridcolumn-editor__td .x-grid-cell-inner {
+        background: #f6f6f6; }
+
+.g-gridcolumn-editor__td.x-grid-dirty-cell {
+    background: none; }
+
+    .g-gridcolumn-editor__td.x-grid-dirty-cell .x-grid-cell-inner {
+        background: #f6f6f6 url(../ext/resources/images/grid/dirty.png) no-repeat 0 0; }
+
+
+/**
+ * Столбец "Действие".
+ * Ge.view.grid.column.Control
+ * Ge.view.grid.column.Control.tdCls = "g-gridcolumn-control__td"
+ */
+.g-action-col {
+    margin-left: 2px;
+    margin-right: 2px; }
+
+span.g-action-col {
+    display: inline-block; }
+
+.g-gridcolumn-control__td .x-grid-cell-inner,
+.g-gridcolumn-action-delete__td .x-grid-cell-inner {
+    padding: 3px }
+
+.g-gridcolumn-control__td .g-action-col i,
+.g-gridcolumn-action-delete__td .g-action-col i {
+    font-size: 17px;
+    line-height: 20px;
+    color: #c1c1c1;
+    margin: 0 3px 0 3px; }
+
+    .g-gridcolumn-control__td .g-action-col i:hover {
+        color: #4E936D; }
+
+
+/**
+ * Столбец "Действие удаления".
+ * Ge.view.grid.column.DeleteAction
+ * Ge.view.grid.column.DeleteAction.tdCls = "g-gridcolumn-action-delete__td"
+ */
+.g-gridcolumn-action-delete__td .g-action-col i:hover {
+    color: #e68497; }
+
+
+/**
+ * Столбец "Контекстное меню управляющнй ячейки".
+ * Ge.view.grid.column.MenuAction
+ * Ge.view.grid.column.MenuAction.iconCls = "g-icon_gridcolumn-menu"
+ */
+.g-icon_gridcolumn-menu {
+    background: url("images/grid/gridcolumn-menu.svg") no-repeat center 4px;
+    background-size: 10px; }
+
+    .g-icon_gridcolumn-menu:hover {
+        background: url("images/grid/gridcolumn-menu_hover.svg") no-repeat center 4px;
+        background-size: 10px; }

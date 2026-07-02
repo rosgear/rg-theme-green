@@ -1,0 +1,373 @@
+/*!
+ * Виджет плавающего меню.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @widget    Gear.widget.Bootslide (@app/widget/Bootslide.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Контейнер всплывающего меню (сайдбар + панель вкладок).
+ */
+.g-bs {
+    display: none;
+    z-index: 9999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    padding-left: 180px; }
+
+/* панель видима */
+.g-bs--is-show {
+    display: block; }
+
+    .g-bs--is-show .g-bs-panel {
+        width: 180px; }
+
+
+/**
+ * Сайдбар.
+ */
+.g-bs-panel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #217346; }
+
+/* Панель инструментов сайдбара */
+.g-bs-panel__toolbar {
+    text-align: right; }
+
+.g-bs-panel__control--collapse {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    margin: 20px; }
+
+    .g-bs-panel__control--collapse path {
+        transform: scale(1.7);
+        fill: #fff; }
+
+    .g-bs-panel__control--collapse:hover path {
+        fill: #439467; }
+
+
+/**
+ * Меню сайдбара.
+ */
+.g-bs-menu__items {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+
+.g-bs-menu__split {
+    position: relative;
+    margin: 5px 0 12px 0; }
+
+    .g-bs-menu__split:after {
+        position: absolute;
+        content: ' ';
+        left: 25px;
+        top: 0;
+        border-bottom: 1px solid #439467;
+        height: 0;
+        right: 25px; }
+
+/* Пункты меню */
+.g-bs-menu__item {
+    font: normal 300 16px/1 "Roboto Condensed", helvetica, arial, verdana, sans-serif;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 15px 12px 15px;
+    cursor: default; }
+
+    .g-bs-menu__item:hover { background: #0A6332; }
+    .g-bs-menu__item--is-focused { background-color: #439467; }
+
+
+/**
+ * Панель вкладок.
+ */
+.g-bs-tabs {
+    position: relative;
+    height: 100%;
+    padding: 5px 24px 24px 24px; }
+
+.g-bs-tabs__body {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    padding: 0 24px 24px 24px; }
+
+/* Логотип панели вкладок */
+.g-bs-tabs__logo {
+    font: normal 300 27px/1 "Roboto Condensed", helvetica, arial, verdana, sans-serif;
+    margin: 8px 0 20px 0;
+    color: #217346; }
+
+.g-bs-tabs__logo span {
+    color: #333;
+    font-size: 18px; }
+
+
+/**
+ * Вкладка панели.
+ */
+.g-bs-tab {
+    font-size: 15px;
+    height: 100%;
+    overflow-y: auto; }
+
+    .g-bs-tab p {
+        margin: 6px 0 6px 0; }
+
+    .g-bs-tab a {
+        text-decoration: none;
+        color: #4D82B8; }
+
+        .g-bs-tab a:hover {
+            color: #217346; }
+
+/* Заголовок вкладки */
+.g-bs-tab__header {
+    font: normal 300 27px/1 "Roboto Condensed", helvetica, arial, verdana, sans-serif;
+    margin: 10px 0 5px 0;
+    color: #333; }
+
+.g-bs-tab__title {
+    font: normal 300 20px/1 "Roboto Condensed", helvetica, arial, verdana, sans-serif;
+    margin: 5px 0 10px 0;
+    color: #217346; }
+
+    .g-bs-tab__title span {
+        color: #333; }
+
+/* Подзаголовок вкладки */
+.g-bs-tab__subtitle {
+    font: normal 300 17px/1 "Roboto Condensed", helvetica, arial, verdana, sans-serif;
+    margin: 5px 0 10px 0;
+    color: #4D82B8;
+    margin-bottom: 15px; }
+
+    .g-bs-tab__subtitle > span {
+        display: inline-block;
+        background-color: #edf2f8;
+        margin-right: 2px;
+        padding:2px 0 2px 0;
+        width: 20px;
+        text-align: center;
+        font-weight: bold; }
+
+/* Контейнер текста */
+.g-bs-tab__set {
+    padding: 5px 5px 5px 10px;
+    margin-bottom: 5px; }
+
+    .g-bs-tab__set .row {
+        margin-right: 0px; }
+
+    .g-bs-tab__set .row-padding {
+        margin-bottom: 30px; }
+
+    .g-bs-tab__set label {
+        color: #666666; }
+
+.g-bootslide-scroll {
+    overflow-y: auto;
+    height: calc(100% - 95px); }
+
+/* Вкладка "Сведения" */
+#g-bs-item-common-tab .g-bs-tab__set p {
+    line-height: 1.2;
+    font-size: 17px;
+    font-weight: 300; }
+
+/**
+ * Кнопка (значок + текст).
+ * <div class="g-bs-button [g-bs-icon]">...
+ */
+.g-bs-button {
+    display: inline-block;
+    border: 1px solid #ababab;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #555 !important;
+    width: 150px;
+    min-height: 85px;
+    padding-top: 50px;
+    font-size: 13px; }
+
+    .g-bs-button:hover {
+        border: 1px solid #86bfa0;
+        background-color: #D3F0E0;
+        color: #333; }
+/**
+ * Кнопка имеет значок.
+ * <div class="g-bs-button [g-icon-svg] [g-icon-m]">...
+ */
+.g-bs-button.g-icon-m,
+.g-bs-button.g-icon-svg {
+   background-position: center 13px;  }
+
+
+/**
+ * Глиф кнопки.
+ */
+.g-bs-glyph {
+    width: 30px;
+    height: 30px; }
+
+    .g-bs-glyph i.fa {
+        font-size: 25px; }
+
+
+/**
+ * Значки мессенджеров кнопок.
+ * <div class="g-bs-msn [g-bs-msn__...] [g-bs-msn--is-disabled]">...
+ */
+.g-bs-msn {
+    display: inline-block;
+    margin: 3px;
+    background-color: #efefef;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center; }
+
+    .g-bs-msn:hover {
+        background-color: #e9e9eb; }
+
+        .g-bs-msn:hover i {
+            color: #217346; }
+
+.g-bs-msn__facebook:hover i {
+    color: #3C599B; }
+
+.g-bs-msn__vk:hover i {
+    color: #4C75A3; }
+
+.g-bs-msn__ok:hover i {
+    color: #F68634; }
+
+.g-bs-msn__twitter:hover i {
+    color: #20AAE9; }
+
+.g-bs-msn__linkedin:hover i {
+    color: #0972C3; }
+
+.g-bs-msn i {
+    font-size: 27px;
+    line-height: 40px;
+    color: #838383;
+    transition: color 0.2s linear; }
+
+.g-bs-msn--is-disabled:hover {
+    background-color: #efefef; }
+
+    .g-bs-msn--is-disabled:hover i,
+    .g-bs-msn--is-disabled i {
+        color: #d6d6d6; }
+
+
+/**
+ * Миниатюра (значок + текст + ссылка) навигации в списке.
+ * <div class="g-bs-thumb [g-bs-thumb_icon]">...
+ */
+.g-bs-thumb {
+    margin-bottom: 5px;
+    min-height: 90px;
+}
+.g-bs-thumb:after { 
+    content: "";
+    display: table;
+    clear: both; }
+/* миниатюра имеет значок */
+.g-bs-thumb_icon {
+    padding: 0 0 0 160px;
+}
+.g-bs-thumb_icon .g-bs-button {
+    margin-left: -160px;
+    float: left;
+}
+/* Заголовок миниатюры */
+.g-bs-thumb__header {
+    font: normal 300 18px/1 "Roboto Condensed", helvetica, arial, verdana, sans-serif;
+    margin-bottom: 5px;
+    color: #111; }
+
+    .g-bs-thumb__header i {
+        font-size: 18px;
+        font-style: normal;
+        margin-left: 5px;
+        color: #217346; }
+
+/* Назначение миниатюры */
+.g-bs-thumb__tag {
+    background-color: #e8f2ed;
+    padding: 2px 5px 2px 5px;
+    font-size: 13px;
+    color: #666666; }
+
+/* Тело миниатюры */
+.g-bs-thumb__body {
+    font-size: 13px;
+    color: #666666; }
+
+.g-bs-thumb__wrap {
+    float: left; }
+
+
+/**
+ * Фото пользователя.
+ * <div class="g-bs-photo [g-bs-photo_radius] [g-bs-photo--is-none]">...
+ */
+.g-bs-photo {
+    position: relative;
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+    margin: 0 10px 20px 0;
+    overflow: hidden;
+    background-size: 97px 97px; }
+
+    .g-bs-photo img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 3px solid #e9e9eb; }
+
+.g-bs-photo--is-none {
+    background-color: #efefef;
+    border: 0 none; }
+
+.g-bs-photo_radius {
+    border-radius: 50%; }
+
+
+@media (max-width: 1300px) {
+    /* Детализация по кнопке */
+    .g-bs-thumb__body { 
+        display: none; }
+}
+
+@media (max-width: 992px) {
+    /* Детализация по кнопке */
+    .g-bs-thumb__header {
+        font-size: 16px; }
+}

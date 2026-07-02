@@ -1,0 +1,217 @@
+/*!
+ * Значки.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Icons
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+.g-icon { 
+    display: inline-block;
+    vertical-align: sub; }
+
+.g-icon-m, 
+.g-icon-svg {
+    background-position: center center;
+    background-repeat: no-repeat; }
+
+.g-shortcut-icon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    background-size: 45px 45px; }
+
+
+/**
+ * Значок глифа шрифта (Font Awesome...) в элементе управления (кнопки, меню, и т.д.). 
+ * <span class="g-icon-fcss ...">...
+ */
+.g-icon-fcss {
+    font-size: 16px;
+    color: #999999;
+    top: 6px; }
+
+
+/**
+ * Значок инструмента из спрайта.
+ * Ext.Button.iconCls = "g-icon-tool [g-icon-tool_default] x-tool-..."
+ */
+.g-icon-tool {
+    width: 16px;
+    height: 16px; }
+
+.g-icon-tool_default,
+.g-icon-tool_dark { background-image: url("sprites/tool-sprites-dark.png"); }
+.g-icon-tool_green { background-image: url("sprites/tool-sprites-green.png"); }
+
+
+/**
+ * Размеры значка (области заливки или самого тега).
+ */
+.g-icon-svg_size_14,
+.g-icon-svg_size-14-default { background-size: 14px 14px; }
+.g-icon-svg_size_15,
+.g-icon-svg_size-15-default { background-size: 15px 15px; }
+.g-icon-svg_size_16,
+.g-icon-svg_size-16-default { background-size: 16px 16px; }
+.g-icon-svg_size_17,
+.g-icon-svg_size_17-default { background-size: 17px 17px; }
+.g-icon-svg_size_18,
+.g-icon-svg_size_18-default { background-size: 18px 18px; }
+.g-icon-svg_size_19,
+.g-icon-svg_size_19-default { background-size: 19px 19px; }
+.g-icon-svg_size_20,
+.g-icon-svg_size_20-default { background-size: 20px 20px; }
+.g-icon-svg_size_24,
+.g-icon-svg_size_24-default { background-size: 24px 24px; }
+.g-icon-svg_size_32,
+.g-icon-svg_size_32-default { background-size: 32px 32px; }
+.g-icon-svg_size_64,
+.g-icon-svg_size_64-default { background-size: 64px 64px; }
+.g-icon-svg_size_shortcut { background-size: 45px 45px; }
+.g-icon_size_14 { width: 14px; height: 14px; }
+.g-icon_size_15 { width: 15px; height: 15px; }
+.g-icon_size_16 { width: 16px; height: 16px; }
+.g-icon_size_17 { width: 17px; height: 17px; }
+.g-icon_size_18 { width: 18px; height: 18px; }
+.g-icon_size_19 { width: 19px; height: 19px; }
+.g-icon_size_20 { width: 20px; height: 20px; }
+.g-icon_size_24 { width: 24px; height: 24px; }
+.g-icon_size_32 { width: 32px; height: 32px; }
+.g-icon_size_64 { width: 64px; height: 64px; }
+.g-icon_size_shortcut { width: 45px; height: 45px; }
+.g-icon_size_button_small { min-height: 16px; }
+.g-icon_size_button_medium { min-height: 32px; }
+.g-icon_size_button_large{ min-height: 64px; }
+
+
+/* Цвет с применением фильтра (только для значков "g-icon-m_...") */
+/* https://codepen.io/brucebentley/pen/orGPRg */
+.g-icon-m_color_default { filter: url("svg-mask/svg-filter.svg#color-default"); }
+.g-icon-m_color_white { filter: url("svg-mask/svg-filter.svg#color-white"); }
+.g-icon-m_color_error,
+.g-icon-m_color_red { filter: url("svg-mask/svg-filter.svg#color-red"); }
+.g-icon-m_color_active { filter: url("svg-mask/svg-filter.svg#color-active"); }
+.g-icon-m_color_inactive { filter: url("svg-mask/svg-filter.svg#color-inactive"); }
+.g-icon-m_color_success { filter: url("svg-mask/svg-filter.svg#color-success"); }
+.g-icon-m_color_base { filter: url("svg-mask/svg-filter.svg#base-color"); }
+.g-icon-m_color_neutral-dark { filter: url("svg-mask/svg-filter.svg#neutral-dark-color"); }
+
+
+/* Отступы */
+.g-icon_offset_1 { margin: 0 1px 0 1px; }
+.g-icon_offset_2 { margin: 0 2px 0 2px; }
+.g-icon_offset_3 { margin: 0 3px 0 3px; }
+
+
+/* События */
+.g-icon-m_is-hover:hover { filter: url("svg-mask/svg-filter.svg#hover"); }
+
+
+/* Значки с маской в формате SVG (для совместного использования с "g-icon-m_color") */
+.g-icon-m_backend { background-image: url("svg-mask/backend.svg"); }
+.g-icon-m_frontend { background-image: url("svg-mask/frontend.svg"); }
+/* Базовые (basic) */
+.g-icon-m_add { background-image: url("svg-mask/basic/add.svg"); }
+.g-icon-m_accessible { background-image: url("svg-mask/basic/accessible.svg"); }
+.g-icon-m_arrow-left { background-image: url("svg-mask/basic/arrow-left.svg"); }
+.g-icon-m_circle { background-image: url("svg-mask/basic/circle.svg"); }
+.g-icon-m_edit-item { background-image: url("svg-mask/basic/edit-item.svg"); }
+.g-icon-m_edit { background-image: url("svg-mask/basic/edit.svg"); }
+.g-icon-m_history { background-image: url("svg-mask/basic/history.svg"); }
+.g-icon-m_trash { background-image: url("svg-mask/basic/trash.svg"); }
+.g-icon-m_reset { background-image: url("svg-mask/basic/reset.svg"); }
+.g-icon-m_link { background-image: url("svg-mask/basic/link.svg"); }
+.g-icon-m_visible { background-image: url("svg-mask/basic/visible.svg"); }
+.g-icon-m_nodes { background-image: url("svg-mask/basic/nodes.svg"); }
+.g-icon-m_info { background-image: url("svg-mask/basic/info.svg"); }
+.g-icon-m_info-circle { background-image: url("svg-mask/basic/info-circle.svg"); }
+.g-icon-m_unlock { background-image: url("svg-mask/basic/unlock.svg"); }
+.g-icon-m_lock { background-image: url("svg-mask/basic/lock.svg"); }
+.g-icon-m_wrench { background-image: url("svg-mask/basic/wrench.svg"); }
+.g-icon-m_markup { background-image: url("svg-mask/basic/markup.svg"); }
+.g-icon-m_cog { background-image: url("svg-mask/basic/cog.svg"); }
+.g-icon-m_execute { background-image: url("svg-mask/basic/execute.svg"); }
+.g-icon-m_save { background-image: url("svg-mask/basic/save.svg"); }
+.g-icon-m_save-1 { background-image: url("svg-mask/basic/save-1.svg"); }
+.g-icon-m_key { background-image: url("svg-mask/basic/key.svg"); }
+.g-icon-m_upload { background-image: url("svg-mask/basic/upload.svg"); }
+.g-icon-m_download { background-image: url("svg-mask/basic/download.svg"); }
+.g-icon-m_language { background-image: url("svg-mask/basic/language.svg"); }
+.g-icon-m_contacts { background-image: url("svg-mask/basic/contacts.svg"); }
+.g-icon-m_tag { background-image: url("svg-mask/basic/tag.svg"); }
+.g-icon-m_shortcode { background-image: url("svg-mask/basic/shortcode.svg"); }
+.g-icon-m_table { background-image: url("svg-mask/basic/table.svg"); }
+.g-icon-m_grid { background-image: url("svg-mask/basic/grid.svg"); }
+.g-icon-m_check { background-image: url("svg-mask/basic/check.svg"); }
+.g-icon-m_xmark { background-image: url("svg-mask/basic/xmark.svg"); }
+.g-icon-m_cut { background-image: url("svg-mask/basic/cut.svg"); }
+
+
+/* Значки в формате SVG */
+/* Базовые (basic) */
+.g-icon_refresh { background-image: url("svg/basic/refresh.svg"); }
+.g-icon_cleanup { background-image: url("svg/basic/cleanup.svg"); }
+.g-icon_help { background-image: url("svg/basic/help.svg"); }
+.g-icon_info { background-image: url("svg/basic/info.svg"); }
+.g-icon_search { background-image: url("svg/basic/search.svg"); }
+.g-icon_find { background-image: url("svg/basic/find.svg"); }
+.g-icon_cut { background-image: url("svg/basic/cut.svg"); }
+.g-icon_copy { background-image: url("svg/basic/copy.svg"); }
+.g-icon_filter { background-image: url("svg/basic/filter.svg"); }
+.g-icon_manual { background-image: url("svg/basic/manual.svg"); }
+/* Браузеры (browsers) */
+.g-icon_browser-firefox { background-image: url("svg/browsers/firefox.svg"); }
+.g-icon_browser-opera { background-image: url("svg/browsers/opera.svg"); }
+.g-icon_browser-chrome { background-image: url("svg/browsers/chrome.svg"); }
+.g-icon_browser-safari { background-image: url("svg/browsers/safari.svg"); }
+.g-icon_browser-yandex { background-image: url("svg/browsers/yandex.svg"); }
+.g-icon_browser-edge,
+.g-icon_browser-ie { background-image: url("svg/browsers/ie.svg"); }
+/* Доступные (access) */
+/* роли пользователей */
+.g-icon_user-roles_large,
+.g-icon_user-roles_medium,
+.g-icon_user-roles { background-image: url("svg/access/user-roles.svg"); }
+.g-icon_user-roles_small { background-image: url("svg/access/user-roles_small.svg"); }
+/* роли пользователей (white) */
+.g-icon_user-roles-white_large,
+.g-icon_user-roles-white_medium,
+.g-icon_user-roles-white { background-image: url("svg/access/user-roles-white.svg"); }
+.g-icon_user-roles-white_small { background-image: url("svg/access/user-roles-white_small.svg"); }
+/* профиль пользователя */
+.g-icon_user-profile_large,
+.g-icon_user-profile_medium,
+.g-icon_user-profile { background-image: url("svg/access/user-profile.svg"); }
+.g-icon_user-profile_small { background-image: url("svg/access/user-profile_small.svg"); }
+/* учетная запись пользователя */
+.g-icon_user-account_large,
+.g-icon_user-account_medium,
+.g-icon_user-account { background-image: url("svg/access/user-account.svg"); }
+.g-icon_user-account_small { background-image: url("svg/access/user-account_small.svg"); }
+/* пользователь без фото (м) */
+.g-icon_user-none_large,
+.g-icon_user-none_medium,
+.g-icon_user-none { background-image: url("svg/access/user-none.svg"); }
+.g-icon_user-none_small { background-image: url("svg/access/user-none_small.svg"); }
+/* пользователь с фото, но файл фото отсутствует (м) */
+.g-icon_user-none_br_large,
+.g-icon_user-none_br_medium,
+.g-icon_user-none_br { background-image: url("svg/access/user-none_br.svg"); }
+.g-icon_user-none_br_small { background-image: url("svg/access/user-none_br_small.svg"); }
+/* пользователь без фото (ж) */
+.g-icon_user-none-f_large,
+.g-icon_user-none-f_medium,
+.g-icon_user-none-f { background-image: url("svg/access/user-none-f.svg"); }
+.g-icon_user-none-f_small { background-image: url("svg/access/user-none-f_small.svg"); }
+/* пользователь с фото, но файл фото отсутствует (ж) */
+.g-icon_user-none-f_br_large,
+.g-icon_user-none-f_br_medium,
+.g-icon_user-none-f_br { background-image: url("svg/access/user-none-f_br.svg"); }
+.g-icon_user-none-f_br_small { background-image: url("svg/access/user-none-f_br_small.svg"); }

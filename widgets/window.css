@@ -1,0 +1,123 @@
+/*!
+ * Виджет окна.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Прогресс загрузки окна.
+ */
+.g-window_load .x-window-body {
+    background: url("images/loading/loading.gif") no-repeat center center;
+}
+
+
+/**
+ * Окно информации.
+ * Ext.Window.cls = "g-window_info"
+ */
+ .g-window_info .x-panel-body {
+    background: #f9f9f9;
+}
+/* для Ext.toolbar.Toolbar */
+.g-window_info .x-toolbar-default,
+.g-window_info .x-toolbar-footer {
+    background-color: #f9f9f9;
+}
+/* для Ext.form.Label.ui = "fieldset-comment" */
+.g-window_info .x-component-fieldset-comment,
+/* для Ext.form.Label.ui = "comment" */
+.g-window_info .x-component-comment {
+    background-color: #f0f0f0;
+}
+
+
+/**
+ * Окно установки.
+ * Ext.Window.cls = "g-window_install"
+ */
+ .g-window_install .x-panel-body {
+    background: #f9f9f9;
+}
+/* для Ext.toolbar.Toolbar */
+.g-window_install .x-toolbar-default,
+.g-window_install .x-toolbar-footer {
+    background-color: #f9f9f9;
+}
+/* для Ext.form.Label.ui = "fieldset-comment" */
+.g-window_install .x-component-fieldset-comment,
+/* для Ext.form.Label.ui = "comment" */
+.g-window_install .x-component-comment {
+    background-color: #f0f0f0;
+}
+
+
+/**
+ * Окно конфигурации.
+ * Ext.Window.cls = "g-window_configuration"
+ */
+ .g-window_configuration .x-panel-body {
+    background: #f9f9f9;
+}
+/* для Ext.toolbar.Toolbar */
+.g-window_configuration .x-toolbar-default,
+.g-window_configuration .x-toolbar-footer {
+    background-color: #f9f9f9;
+}
+/* для Ext.form.Label.ui = "fieldset-comment" */
+.g-window_configuration .x-component-fieldset-comment,
+/* для Ext.form.Label.ui = "comment" */
+.g-window_configuration .x-component-comment {
+    background-color: #f0f0f0;
+}
+
+
+/**
+ * Окно профиля записи (добавление / редактирование записи).
+ * Ext.Window.cls = "g-window_profile"
+ */
+ .g-window_profile .x-panel-body {
+    background: #f9f9f9;
+}
+/* для Ext.toolbar.Toolbar */
+.g-window_profile .x-toolbar-default,
+.g-window_profile .x-toolbar-footer {
+    background-color: #f9f9f9;
+}
+/* для Ext.form.Label.ui = "fieldset-comment" */
+.g-window_profile .x-component-fieldset-comment,
+/* для Ext.form.Label.ui = "comment" */
+.g-window_profile .x-component-comment {
+    background-color: #f0f0f0;
+}
+
+
+/**
+ * Окно настроек.
+ * Ext.Window.cls = "g-window_settings"
+ */
+.g-window_settings .x-panel-body {
+    background: #f9f9f9;
+}
+/* для Ext.toolbar.Toolbar */
+.g-window_settings .x-toolbar-default,
+.g-window_settings .x-toolbar-footer {
+    background-color: #f9f9f9;
+}
+/* для Ext.form.Label.ui = "fieldset-comment" */
+.g-window_settings .x-component-fieldset-comment,
+/* для Ext.form.Label.ui = "comment" */
+.g-window_settings .x-component-comment {
+    background-color: #f0f0f0;
+}
+/* для Ext.form.Label.ui = "header" */
+.g-window_settings .x-component-header {
+    padding-left: 15px;
+}

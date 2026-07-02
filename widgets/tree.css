@@ -1,0 +1,32 @@
+/*!
+ * Виджет дерева.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @widget    Ge.view.tree.Tree (@app/view/tree/Tree.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Узел дерева.
+ */
+.g-tree .x-tree-node-text {
+    font: normal 12px/16px helvetica, arial, verdana, sans-serif;
+    color: #666666;
+}
+
+
+/**
+ * Значки узлов дерева.
+ */
+/* Значок ветки дерева */
+.g-tree .x-tree-icon-leaf { background: url("images/gridtree/gridtree-node-leaf.svg") no-repeat center center; }
+/* Значок узла дерева */
+.g-tree .x-tree-icon-parent { background: url("images/gridtree/gridtree-node-parent_small.svg") no-repeat center center; }
+/* Значок открытого узла дерева */
+.g-tree .x-grid-tree-node-expanded .x-tree-icon-parent { background: url("images/gridtree/gridtree-node-parent--open_small.svg") no-repeat center center; }

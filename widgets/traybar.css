@@ -1,0 +1,103 @@
+/*!
+ * Виджет панели уведомлений.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @widget    Ge.view.main.Traybar (@app/view/main/Traybar.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Панель уведомлений.
+ * Ge.view.main.Traybar.cls = "g-traybar"
+ */
+.g-traybar {
+    background: #e1e1e1;
+    left: auto !important;
+    right: 0 !important;
+    padding: 0;
+}
+.g-traybar .g-traybar-btn {
+    width: 33px;
+    height: 37px;
+    border-radius: 0;
+    background-color: transparent;
+    background-image: none;
+    transition: background-color 100ms linear;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+.g-traybar-btn .icon-font {
+    font-size: 17px;
+}
+.g-traybar .g-traybar-btn .x-btn-inner {
+    text-overflow: inherit;
+}
+.g-traybar .g-traybar-btn.x-btn-over {
+    background-color: #C1CFC8;
+}
+.g-traybar .g-traybar-btn.x-btn-over i.fa {
+    color: #fff;
+}
+.g-traybar .g-traybar-btn i.fa {
+    font-size: 18px;
+    position: relative;
+    margin-right: 3px;
+    color: #AFAFAF;
+}
+.g-traybar .g-traybar-btn .x-btn-inner-default-toolbar-small {
+    padding: 0;
+}
+.g-traybar-btn .x-btn-wrap-default-toolbar-small.x-btn-arrow-right::after {
+    padding: 0;
+    display: none;
+}
+.g-traybar-btn-digit {
+    position: absolute;
+    left: 12px;
+    top: 5px;
+    display: inline-block;
+    background: rgba(255, 0, 0, 0.7);
+    border-radius: 10px;
+    width: 12px;
+    height: 12px;
+    color: #fff;
+    line-height: 12px;
+    font-size: 8px;
+    text-align: center;
+}
+/* контекстное меню уведомлений */
+.g-traybar-menu .x-menu-item-link {
+    min-width: 300px;
+    min-height: 30px;
+}
+/* элемент меню */
+.g-traybar-menu-item-all {
+    min-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    -webkit-box-shadow: 0px -2px 1px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    0px -2px 1px 0px rgba(50, 50, 50, 0.51);
+    box-shadow:         0px -2px 1px 0px rgba(50, 50, 50, 0.2);
+}
+.g-traybar-menu-item-all .x-menu-item-link {
+    min-height: 10px;
+}
+.g-traybar-menu-item-all i {
+    font-size: 11px;
+}
+/* ссылка в меню */
+.g-traybar-menu-item-none .x-menu-item-link {
+    min-height: 100px;
+    color: #aaa;
+    text-align: center;
+    line-height: 100px;
+}
+.g-traybar-menu-item-none a.x-menu-item-link:hover {
+    background: none;
+}

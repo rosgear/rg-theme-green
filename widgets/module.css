@@ -1,0 +1,209 @@
+/*!
+ * Модуль.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Заливка заднего фона.
+ */
+.g-widget-info > .x-panel-body,
+.g-extension-info > .x-panel-body,
+.g-module-info > .x-panel-body {
+    overflow-y: auto;
+    background: inherit; }
+
+.g-widget-info__body {
+    padding: 20px;
+    background: url("images/module/widget-info.svg") no-repeat calc(100% - 25px) calc(100% - 20px);
+    background-size: 100px; }
+
+.g-extension-info__body {
+    padding: 20px;
+    background: url("images/module/extension-info.svg") no-repeat calc(100% - 25px) calc(100% - 20px);
+    background-size: 100px; }
+
+.g-module-info__body {
+    padding: 20px;
+    background: url("images/module/module-info.svg") no-repeat calc(100% - 25px) calc(100% - 20px);
+    background-size: 100px; }
+
+
+/**
+ * Заголовки.
+ */
+.g-module-info h1,
+.g-module-info h2,
+.g-module-info h3,
+.g-module-info h4 {
+    font-family: "Roboto Condensed", helvetica, arial, verdana, sans-serif;
+    font-weight: 300;
+    color: #217346;
+    margin:  15px 0 5px 0; }
+
+.g-module-info h2 {
+    margin-top: 30px; }
+
+.g-module-info h1 {
+    font-size: 25px; }
+
+    .g-module-info h1 .g-icon {
+        margin-bottom: 3px; }
+
+.g-module-info h2 {
+    font-size: 22px; }
+
+.g-module-info h3,
+.g-module-info h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #333;
+    margin-top: 12px; }
+
+    .g-module-info h1 > span,
+    .g-module-info h2 > span,
+    .g-module-info h3 > span,
+    .g-module-info h4 > span {
+        color: #665; }
+
+/* Значок модуля */
+.g-module-info .icon {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    width: 400px;
+    padding-left: 35px;
+    margin-top: 15px;
+    min-height: 33px; }
+
+/* Текст в нижнем регистре */
+.g-module-info .lc {
+    text-transform: lowercase; }
+
+/* Текст в верхнем регистре */
+.g-module-info .uc {
+    text-transform: uppercase; }
+
+.g-module-info label {
+    color: #666666; }
+
+/* Список */
+.g-module-info ul.none { 
+    list-style: none;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 0;
+    padding-left: 15px; }
+
+.g-module-info li label {
+    color: #217346;
+    font-weight: bold; }
+
+/* Параграф */
+.g-module-info p {
+    margin: 6px 10px 6px 5px;
+    font-size: 15px; }
+
+/* Ссылка */
+.g-module-info a {
+    text-decoration: none;
+    color: #4D81B8; }
+
+    .g-module-info a:hover {
+        text-decoration: underline; }
+
+.g-module-info .col-control {
+    width:240px;
+    background:red; }
+
+.g-module-info .col-control-offset {
+    padding-left:240px; }
+
+/* */
+.g-module-info table {
+    margin-top: 10px;
+    font-family: "Roboto Condensed", helvetica, arial, verdana, sans-serif; }
+
+    .g-module-info table th {
+        font-weight: normal;
+        text-align: center;
+        color: #666667;
+        background-color: #dbdbdb;
+        padding: 7px 25px 7px 25px; }
+
+    .g-module-info table.compact th {
+        padding: 7px 7px 7px 7px; }
+
+    .g-module-info table td {
+        color: #666667;
+        background-color: #d2dad6;
+        padding: 7px 25px 7px 25px; }
+
+.g-module-info .parameter {
+    color: #333; }
+
+/**
+ * Значки модуля.
+ */
+/* Значок модуля по умолчанию */
+.g-icon_module_large,
+.g-icon_module_medium,
+.g-icon_module { background-image: url("images/module/module.svg"); }
+.g-icon_module_small { background-image: url("images/module/module_small.svg"); }
+/* Значок отсутствия модуля */
+.g-icon_module-none_large,
+.g-icon_module-none_medium,
+.g-icon_module-none { background-image: url("images/module-none.svg"); }
+.g-icon_module-none_small { background-image: url("images/module-none_small.svg"); }
+/* Значок модуля в белом цвете */
+.g-icon_module-white_large,
+.g-icon_module-white_medium,
+.g-icon_module-white { background-image: url("images/module/module-white.svg"); }
+.g-icon_module-white_small { background-image: url("images/module/module-white_small.svg"); }
+
+
+/**
+ * Значки расширения модуля.
+ */
+/* Значок расширения по умолчанию */
+.g-icon_extension_large,
+.g-icon_extension_medium,
+.g-icon_extension { background-image: url("images/module/extension.svg"); }
+.g-icon_extension_small { background-image: url("images/module/extension_small.svg"); }
+/* Значок отсутствия расширения */
+.g-icon_extension-none_large,
+.g-icon_extension-none_medium,
+.g-icon_extension-none { background-image: url("images/module/extension-none.svg"); }
+.g-icon_extension-none_small { background-image: url("images/module/extension-none_small.svg"); }
+/* Значок расширения в белом цвете */
+.g-icon_extension-white_large,
+.g-icon_extension-white_medium,
+.g-icon_extension-white { background-image: url("images/module/extension-white.svg"); }
+.g-icon_extension-white_small { background-image: url("images/module/extension-white_small.svg"); }
+
+
+/**
+ * Значки виджета.
+ */
+/* Значок виджета по умолчанию */
+.g-icon_extension_large,
+.g-icon_extension_medium,
+.g-icon_extension { background-image: url("images/module/widget.svg"); }
+.g-icon_extension_small { background-image: url("images/module/widget_small.svg"); }
+/* Значок отсутствия виджета */
+.g-icon_extension-none_large,
+.g-icon_extension-none_medium,
+.g-icon_extension-none { background-image: url("images/module/widget-none.svg"); }
+.g-icon_extension-none_small { background-image: url("images/module/widget-none_small.svg"); }
+/* Значок виджета в белом цвете */
+.g-icon_extension-white_large,
+.g-icon_extension-white_medium,
+.g-icon_extension-white { background-image: url("images/module/widget-white.svg"); }
+.g-icon_extension-white_small { background-image: url("images/module/widget-white_small.svg"); }

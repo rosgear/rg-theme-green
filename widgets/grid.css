@@ -1,0 +1,187 @@
+/*!
+ * Виджет панели сетки.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @widget    Ge.view.grid.Panel (@app/view/grid/Grid.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+@import 'grid-button.css';
+@import 'grid-column.css';
+@import 'grid-column-switch.css';
+@import 'grid-plugin-rowexpander.css';
+@import 'grid-upload.css';
+
+
+/**
+ * Cетка.
+ * Ge.view.grid.Panel.cls = "g-grid [g-grid_editor]"
+ */
+/* сетка с возможностью редактирования */
+.g-grid_editor .x-grid-item-over {
+    background-color: #F6F6F6; }
+
+
+/* Заливка заднего фона сетки */
+.g-grid_background { 
+    background: #fff url("images/background/corner-background.jpg") no-repeat right bottom; }
+
+
+/**
+ * Строки сетки.
+ */
+/**
+ * Строка сетки не доступна.
+ * Ge.view.grid.Grid.rowLockCls = "g-grid-row g-grid-row_lock"
+ */
+.g-grid-row_lock td {
+    color: #6666; }
+/* отключение контекстного меню управляющей ячейки */
+.g-grid-row_lock .g-icon_gridcolumn-menu {
+    cursor: default;
+    background: url("images/grid/gridcolumn-menu_locked.svg") no-repeat center center;
+    opacity: 1; }
+
+
+/**
+ * Ячейки сетки.
+ */
+/**
+ * Ячейка сетки имеет изображение.
+ * Ext.grid.column.Column.tdCls = "g-grid-cell_img [g-grid-cell_img_round]"
+ */
+.g-grid-cell_img img {
+    width: 100%; }
+
+/* круглое изображение */
+.g-grid-cell_img_round img {
+    border-radius: 50%; }
+
+/* векторное (значок) изображение */
+.g-grid-cell_img img.g-icon-svg {
+    background-color: #efefef;
+    background-size: 77% 77%; }
+/**
+ * Ячейка сетки имеет информациию о аудите записи.
+ * <span class="g-grid-cell_log">...
+ */
+.g-grid-cell_log {
+    color: #6666;
+    text-decoration: none; }
+
+    .g-grid-cell_log:hover {
+        color: #333; }
+/**
+ * Ячейка сетки имеет ссылку на ресурс (URL-адрес).
+ * <span class="g-grid-cell_...">...
+ */
+.g-grid-cell_link,
+.g-grid-cell_mail {
+    color: #4D82B8;
+    text-decoration: none; }
+
+.g-grid-cell_link:hover,
+.g-grid-cell_mail:hover {
+    color: #217346; }
+
+/**
+ * Размеры ячейки сетки по высоте.
+ */
+.g-grid-cell_size_16 { height: 16px; }
+.g-grid-cell_size_17 { height: 17px; }
+.g-grid-cell_size_18 { height: 18px; }
+.g-grid-cell_size_19 { height: 19px; }
+.g-grid-cell_size_20 { height: 20px; }
+.g-grid-cell_size_32 { height: 32px; }
+/**
+ * Значки в ячейках сетки.
+ */
+/* Значок аудита записи */
+.g-icon_gridcolumn-audit {
+    background-image: url("images/grid/gridcolumn-audit.svg");
+    opacity: 0.5;
+    vertical-align: sub;
+}
+/* Значок роли пользователей и права доступа */
+.g-icon_gridcolumn-user-roles {
+    background-image: url("../assets/icons/svg/access/user-roles_small.svg");
+    opacity: 0.5;
+    vertical-align: sub;
+    background-size: 14px 14px;
+}
+/* Значок модуля */
+.g-icon_gridcolumn-modules {
+    background-image: url("images/module/module_small.svg");
+    opacity: 0.5;
+    vertical-align: sub;
+    background-size: 14px 14px;
+}
+/* Значок настройки модулей */
+.g-icon_gridcolumn-settings {
+    background-image: url("../assets/icons/svg-mask/basic/wrench.svg");
+    filter: url("../assets/icons/svg-mask/svg-filter.svg#color-default");
+    opacity: 0.5;
+    vertical-align: sub;
+    background-size: 14px 14px;
+}
+
+
+/**
+ * Всплывающая подсказка в ячейке сетки.
+ * Ge.view.grid.CellTip
+ */
+.g-grid-celltip {
+    padding: 5px 7px 5px 7px;
+    border: 1px solid #c6c6c6;
+    color: #666666;
+    background-color: #fafafa;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
+    font-family: "Roboto Condensed", helvetica, arial, verdana, sans-serif;
+    font-size: 12px;
+}
+/* Заголовок подсказки */
+.g-grid-celltip header {
+    font-size: 15px;
+    margin-bottom: 10px;
+    }
+.g-grid-celltip label {
+    font-style: normal;
+    color: #76A797;
+}
+/* Набор полей подсказки */
+.g-grid-celltip fieldset {
+    border: 0;
+    padding: 0;
+    margin: 5px 0 0 3px;
+}
+.g-grid-celltip fieldset legend {
+    font-size: 12px;
+    color: #217346;
+    font-weight: bold;
+    margin-left: -5px;
+    letter-spacing: 0.8px;
+}
+/* Изображение в подсказке */
+.g-grid-celltip__img {
+    position: relative;
+    padding-left: 75px;
+}
+.g-grid-celltip__img img {
+    position: absolute;
+    width: 70px;
+    left: 0;
+    top: 0;
+}
+/* если изображение (значок) векторное*/
+.g-grid-celltip__img img.g-icon-svg {
+    background-color: #efefef;
+    background-size: 77% 77%;
+}

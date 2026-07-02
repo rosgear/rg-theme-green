@@ -1,0 +1,31 @@
+/*!
+ * Виджеты столбцов панели сетки.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @widget    Ge.view.grid.column.Checker, 
+ *            Ge.view.grid.column.MediaLink,
+ *            Ge.view.grid.column.Editor,
+ *            Ge.view.grid.column.Control,
+ *            Ge.view.grid.column.DeleteAction
+ *            Ge.view.grid.column.MenuAction (@app/view/grid/column/Column.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+.x-panel-upload.x-grid .x-grid-empty {
+    text-align: center;
+    height: calc(100% - 25px);
+    border: 2px dashed silver;
+    margin: 10px; }
+
+    .x-panel-upload.x-grid.drag-over .x-grid-empty {
+        border: 2px dashed #428862;
+        background-color: #eff5f2; }
+
+    .x-panel-upload.x-grid.drag-over .x-grid-view {
+        background-color: #eff5f2; }

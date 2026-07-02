@@ -1,0 +1,163 @@
+/*!
+ * Виджеты (кнопки, поля...) панели формы.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @widget    Ge.view.form.Panel (@app/view/grid/form/Panel.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/* Ext.form.field.Text.[requiredCharTpl,infoCharTpl] */
+.g-form__field-required_char {
+    color: #DF2525;
+    font-weight: bold; }
+
+    .g-form__field-required_char::after {
+        content: '*';
+        font: normal 13px/17px "Roboto Condensed", helvetica, arial, verdana, sans-serif;
+        margin-left: 2px; }
+
+.g-form__field-info_char {
+    color: #C1CFC8;
+    margin-right: 3px;
+    font-size: 12px; }
+
+
+/**
+ * Заголовок (шапка) формы с описанием и значком.
+ * Ext.form.field.Display.cls = "g-form__display__header [g-form__display__header_icon]"
+ */
+.g-form__display__header {
+    padding: 10px 10px 10px 15px;
+    background-color: #e1ede6; }
+
+/* Значок заголовка */
+.g-form__display__header_icon {
+    position: relative;
+    min-height: 38px;
+    padding-left: 43px; }
+
+    .g-form__display__header_icon .g-icon {
+        position: absolute;
+        left: 5px;
+        top: 15px; }
+
+/* Текст заголовка */
+.g-form__display__text {
+    font: 17px/16px "Roboto Condensed", helvetica, arial, verdana, sans-serif;
+    color: #333; }
+
+/* Текст подзаголовока */
+.g-form__display__subtext {
+    font-size: 14px;
+    text-transform: lowercase;
+    margin-top: 3px;
+    color: #7c7c7c;
+    min-height: 17px; }
+
+/* <a class="g-form__link"> */
+.g-form__link {
+    color: #217346;
+    font-size: 14px;
+    text-decoration: none; }
+
+    .g-form__link:hover {
+        color: #333;
+        text-decoration: underline; }
+
+
+/* Ext.form.field.Checkbox: boxLabel="..." */
+.g-form__checkbox-info_img { 
+    margin-right: 4px; }
+
+.g-form__checkbox-info_title {
+    margin-right: 4px;
+    font-size: 14px;
+    cursor: pointer; }
+
+label:hover .g-form__checkbox-info_title {
+    color: #217346; }
+
+.g-form__checkbox-info_desk {
+    color: #acacac; }
+
+
+/* Ge.view.form.field.Text: triggers[cls="..."] */
+.g-form__field-trigger.x-form-trigger-over {
+    background-color: #d3dfd9; }
+
+/* Ext.form.field.ComboBox: tpl[...] */
+.g-boundlist-icon {
+    padding-left: 25px;
+    background-position: 4px center;
+    background-repeat: no-repeat; }
+
+.g-boundlist-icon-leaf { background-image: url(images/gridtree/leaf.png); }
+.g-boundlist-icon-folder { background-image: url(images/gridtree/folder.png); }
+.g-boundlist-icon-none { padding-left: 0; }
+/* Ext.form.field.ComboBox: triggers[cls="..."] */
+.g-form__field-trigger_plus { background-image: url(images/form/plus-trigger.png); }
+.g-form__field-trigger_edit { background-image: url(images/form/edit-trigger.png); }
+.g-form__field-trigger_delete { background-image: url(images/form/delete-trigger.png); }
+.g-form__field-trigger_run { background-image: url(images/form/run-trigger.png); }
+.g-form__field-trigger_browse { background-image: url(images/form/browse-trigger.png); }
+
+.g-boundlist-item {
+    position: relative;
+    min-height: 44px;
+    line-height: 13px;
+    padding-top: 4px; }
+
+.g-boundlist-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 42px; }
+
+.g-boundlist-img_round {
+    border-radius: 50%; }
+
+.g-boundlist-item_offset { 
+    padding-left: 47px; }
+
+
+/**
+ * Всплывающая форма фильтра панели инструментов сетки.
+ * Ext.form.Panel
+ * Ext.form.Panel.cls = "g-popupform-filter"
+ */
+.g-popupform-filter .x-form-item-label-default {
+    color: #444; }
+
+    .g-popupform-filter .x-fieldset-header-default > .x-fieldset-header-text {
+        color: #727272; }
+
+
+/**
+ * Заголовок (шапка) формы с описанием и значком.
+ * Ext.form.field.Display.cls = "g-form__display__header [g-form__display__header_icon]"
+ */
+ .g-adder {
+    border-top: 3px solid #e9e9e9;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.g-adder__button {
+    border-radius: 0px 0px 12px 12px;
+    background-color: #e9e9e9;
+    padding: 0 20px 5px 20px; }
+
+    .g-adder__button .x-btn-inner {
+        color: #667; }
+
+    .g-adder__button.x-btn-over {
+        background-color: #b1cbbe; }
+
+        .g-adder__button.x-btn-focus .x-btn-inner,
+        .g-adder__button.x-btn-over .x-btn-inner {
+            color: #fff; }

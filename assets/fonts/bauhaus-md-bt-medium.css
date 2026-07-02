@@ -1,0 +1,6 @@
+/* Bauhaus Md BT Medium font */
+@font-face {
+  font-family: 'Bauhaus Md BT';
+  font-style: normal;
+  src: local('bauhaus-md-bt-medium'), url(bauhaus-md-bt-medium/bauhaus-md-bt-medium.woff2) format('woff2');
+}

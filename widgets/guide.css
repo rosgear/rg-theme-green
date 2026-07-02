@@ -1,0 +1,155 @@
+/*!
+ * Виджет справочной информации пользователя.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+.g-help {
+    background: #fff;
+    font-family: "Roboto Condensed", system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 300;
+    color: #444; }
+
+.g-help .h1,
+.g-help h1 {
+    font-size:calc(1.2rem + 1.3vw);
+    font-weight: 300;
+    color: #217346; }
+
+.g-help .h2,
+.g-help h2 {
+    font-size:calc(1.2rem + 1.3vw);
+    font-weight: 300;
+    margin-top: .5rem; }
+
+.g-help .h3,
+.g-help h3 {
+    font-size: calc(1rem + .6vw);
+    color: #96762c; }
+
+.g-help .h4,
+.g-help h4 {
+    font-size: calc(0.9rem + .6vw);
+    color: #444; }
+
+.g-help p { margin-bottom: 0.1rem; }
+.g-help ol, 
+.g-help ul {
+    padding-left: 1rem; }
+
+.g-help b,
+.g-help strong {
+    color: #000; }
+
+.g-help a {
+    color: #3e79b4;
+    text-decoration: none; }
+
+    .g-help a:hover {
+        text-decoration: underline; }
+
+.g-help-list {
+    list-style: none; }
+
+    .g-help-list li {
+        margin-bottom: 0.3rem; }
+
+/* Сообщения */
+.g-help .alert {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    border-radius: 0;
+    margin-bottom: 0.5rem; }
+
+    .g-help .alert-danger {
+        background: #fff0f2;
+        border-color: #ffe0e3;
+        color: #935b60; }
+
+/* Статья */
+.g-help-article_404 {
+    padding-top: 5.5rem;
+    background: 1rem top url("images/guide/icon-404.png") no-repeat; }
+
+    .g-help-article_404 p {
+        text-align: justify; }
+
+/* Поля формы описания */
+.g-help-fld {
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+.g-help-fld_checkbox { background-image: url("images/form/checkbox.svg"); }
+.g-help-fld_date { background-image: url("images/form/datefield.svg"); }
+.g-help-fld_display { background-image: url("images/form/displayfield.svg"); }
+.g-help-fld_file { background-image: url("images/form/filefield.svg"); }
+.g-help-fld_hidden { background-image: url("images/form/hiddenfield.svg"); }
+.g-help-fld_editor { background-image: url("images/form/htmleditor.svg"); }
+.g-help-fld_number { background-image: url("images/form/numberfield.svg"); }
+.g-help-fld_radio { background-image: url("images/form/radio.svg"); }
+.g-help-fld_spinner { background-image: url("images/form/spinnerfield.svg"); }
+.g-help-fld_textarea { background-image: url("images/form/textarea.svg"); }
+.g-help-fld_text { background-image: url("images/form/textfield.svg"); }
+.g-help-fld_time { background-image: url("images/form/timefield.svg"); }
+.g-help-fld_password { background-image: url("images/form/password.svg"); }
+.g-help-fld_combo { background-image: url("images/form/combobox.svg"); }
+.g-help-fld_listbox { background-image: url("images/form/listbox.svg"); }
+
+/* Изображения */
+.g-help-screen { text-align: center; }
+
+    .g-help-screen img {
+        margin-bottom: 1rem;
+        border: 2px solid #f4f4f4;
+        border-radius: 3px; }
+
+.g-help-screen--hidable { display: none; }
+
+.g-help-icon { margin-bottom: 0.5rem; }
+
+    .g-help-icon img { width: 64px; }
+
+@media (min-width: 1200px) {
+    .g-help .h1, 
+    .g-help h1 {
+        font-size: 1.5rem;
+    }
+    .g-help .h2, 
+    .g-help h2 {
+        font-size: 1.3rem;
+    }
+    .g-help .h3, 
+    .g-help h3 {
+        font-size: 1.1rem;
+    }
+    .g-help .h4, 
+    .g-help h4 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .g-help-icon {  text-align: center; }
+
+        .g-help-icon img { width: 50%; }
+}
+
+@media (min-width: 450px) {
+    h1 { text-align: center; }
+    .g-help-screen--hidable { display: block; }
+}
+
+@media (max-width: 900px) {
+    .g-help-screen img { max-width: 100%; }
+}

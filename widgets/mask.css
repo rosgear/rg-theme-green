@@ -1,0 +1,188 @@
+/*!
+ * Виджет маски сообщений и загрузки.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @widget    Ge.Mask (@app/Mask.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Маска.
+ * Gear.Mask, Gear.MessageMask
+ */
+.g-mask {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 19999;
+    background: rgba(255, 255, 255, 0.5); }
+
+/* Тело маски */
+.g-mask__body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+     -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 405px;
+    min-height: 200px; }
+
+/* Заголовок маски */
+.g-mask__title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #333; }
+
+.g-mask__inner {
+    position: relative;
+    min-height: 62px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #333; }
+
+.g-mask__inner_icon {
+    padding-left: 80px; }
+
+/* Значок маски */
+.g-mask__icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 64px;
+    height: 64px;
+    opacity: 0.7; }
+
+
+/**
+ * Виды фона маски.
+ * <div class="g-mask [g-mask_blur]...">...
+ */
+/* Фон размытый */
+.g-mask_blur {
+  -webkit-filter: blur(1px);
+     -moz-filter: blur(1px);
+       -o-filter: blur(1px);
+      -ms-filter: blur(1px);
+          filter: blur(1px); }
+
+/* Фон с радиальным размытием */
+.g-mask_radial {
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(89%, rgba(33,115,70,1)), color-stop(91%, rgba(33,115,70,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(33,115,70,1) 89%, rgba(33,115,70,1) 91%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(33,115,70,1) 89%, rgba(33,115,70,1) 91%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(33,115,70,1) 89%, rgba(33,115,70,1) 91%);
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0.8) 0%, rgba(33,115,70,1) 89%, rgba(33,115,70,1) 91%);
+}
+/* Фон серый полупрозрачный */
+.g-mask_gray {
+    background: rgba(0, 0, 0, 0.5); }
+
+/* Фон белый полупрозрачный */
+.g-mask_white {
+    background: rgba(255, 255, 255, 0.8); }
+
+
+/**
+ * Виды значков маски.
+ * <div class="g-mask__inner [g-icon-svg] [g-icon-m] [g-glyph]">...
+ */
+/* Векторные значки */
+.g-mask__icon.g-icon-svg,
+.g-mask__icon.g-icon-m {
+    background-repeat: no-repeat;
+    background-size: 64px 64px;
+    background-position: center; }
+
+/* Значок шрифта */
+.g-mask__icon i {
+    color: #4D8F6B;
+    font-size: 55px; }
+
+
+/**
+ * Кнопки маски.
+ */
+.g-mask__buttons {
+    text-align: center; }
+
+    .g-mask__buttons button {
+        background-color: #4D8F6B;
+        color: #fff;
+        padding: 6px 3px;
+        border: 0 none;
+        min-width: 100px;
+        border-radius: 3px;
+        cursor: pointer; }
+
+        .g-mask__buttons button:hover {
+            background-color: #3E855E; }
+
+
+
+/**
+ * Загрузчик в маске.
+ * Gear.LoadMask
+ */
+.g-mask__loader-wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+     -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+.g-mask__loader-title {
+    text-align: center;
+    margin-top: 10px; }
+
+.g-mask__loader,
+.g-mask__loader:after {
+    border-radius: 50%;
+    width: 10em;
+    height: 10em; }
+
+.g-mask__loader {
+    font-size: 10px;
+    text-indent: -9999em;
+    border-top: 1.1em solid rgba(33, 115, 70, 0.2);
+    border-right: 1.1em solid rgba(33, 115, 70, 0.2);
+    border-bottom: 1.1em solid rgb(33, 115, 70, 0.2);
+    border-left: 1.1em solid #ffffff;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load8 1.1s infinite linear;
+    animation: load8 1.1s infinite linear; }
+
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

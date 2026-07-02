@@ -1,0 +1,31 @@
+/*!
+ * Theme override.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Разделитель в панеле иснтрументов сетки.
+ */
+.g-grid__toolbar-separator {
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    width: 1px; }
+
+.g-grid__toolbar-separator_medium {
+    margin-top: 5px;
+    min-height: 70px; }
+
+
+/**
+ * Значок в заголовке окна.
+ */
+.x-window-header-title-install > .x-title-icon-wrap-install > .x-title-icon-install {
+   background-size: contain; }

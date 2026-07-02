@@ -1,0 +1,247 @@
+/*!
+ * Виджеты сообщений.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @widget    Ge.MessageMask (@app/Mask.js),
+ *            Ext.MessageBox,
+ *            Ge.app.popup (@app/Application.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Значки маски сообщений.
+ * <div class="g-mask__inner g-icon-svg [g-icon_...]">...
+ */
+/**
+ * Значок информации.
+ */
+.g-icon_msg-info_large,
+.g-icon_msg-info_medium,
+.g-icon_msg-info { background-image: url("images/message/msg-info.svg"); }
+.g-icon_msg-info_small { background-image: url("images/message/msg-info_small.svg"); }
+/**
+ * Значок ошибки доступа.
+ */
+.g-icon_msg-access_large,
+.g-icon_msg-access_medium,
+.g-icon_msg-access { background-image: url("images/message/msg-access.svg"); }
+.g-icon_msg-access_small { background-image: url("images/message/msg-access_small.svg"); }
+/**
+ * Значок сообщения.
+ */
+.g-icon_msg-message_large,
+.g-icon_msg-message_medium,
+.g-icon_msg-message { background-image: url("images/message/msg-message.svg"); }
+.g-icon_msg-message_small { background-image: url("images/message/msg-message_small.svg"); }
+/**
+ * Значок ошибки соединения с сервером.
+ */
+.g-icon_msg-connect_large,
+.g-icon_msg-connect_medium,
+.g-icon_msg-connect { background-image: url("images/message/msg-connect.svg"); }
+.g-icon_msg-connect_small { background-image: url("images/message/msg-connect_small.svg"); }
+/**
+ * Значок ошибки соединения с базой данных.
+ */
+.g-icon_msg-db-connect_large,
+.g-icon_msg-db-connect_medium,
+.g-icon_msg-db-connect { background-image: url("images/message/msg-db-connect.svg"); }
+.g-icon_msg-db-connect_small { background-image: url("images/message/msg-db-connect_small.svg"); }
+/**
+ * Значок ошибки.
+ */
+.g-icon_msg-error_large,
+.g-icon_msg-error_medium,
+.g-icon_msg-error { background-image: url("images/message/msg-error.svg"); }
+.g-icon_msg-error_small { background-image: url("images/message/msg-error_small.svg"); }
+/**
+ * Значок лицензии.
+ */
+ .g-icon_msg-license_large,
+ .g-icon_msg-license_medium,
+ .g-icon_msg-license { background-image: url("images/message/msg-license.svg"); }
+ .g-icon_msg-license_small { background-image: url("images/message/msg-license_small.svg"); }
+
+
+/**
+ * Окно сообщения.
+ * Ext.MessageBox
+ */
+/* Разделитель текста в окне сообщения */
+.x-message-box hr {
+    border: 0 none;
+    border-top: 1px solid #217346; }
+
+.x-message-box-icon.g-icon-svg,
+.x-dlg-icon.g-icon-svg {
+    background-repeat: no-repeat;
+    background-position: center; }
+/**
+ * Метка в окне сообщения для перечисления ошибок.
+ * <span class="g-message-box__label-warning">...
+ */
+.g-message-box__label-warning {
+    font-size: 14px; }
+
+/**
+ * Текст с ошибкой для отчёта в окне сообщения.
+ * <div class="g-message-box__report">...
+ */
+.g-message-box__report {
+    margin-top: 10px;
+    font-size: 14px;
+    background: url("images/message/dlg-send-mail.svg") no-repeat left center;
+    padding-left: 20px; }
+
+/**
+ * Значки окна сообщения.
+ * Ext.MessageBox.icon = "g-icon-svg g-icon_dlg-..."
+ */
+/* Значок ошибки выполнения запроса к бд */
+.g-icon_dlg-query-error {
+    background-image: url("images/message/dlg-query-error.svg"); }
+
+/* Значок ошибки работы адаптера бд */
+.g-icon_dlg-db-error {
+    background-image: url("images/message/dlg-db-error.svg"); }
+
+/* Значок ошибки подключения к бд */
+.g-icon_dlg-db-connect-error {
+    background-image: url("images/message/dlg-db-connect-error.svg"); }
+
+/* Значок ошибки выполнения скрипта */
+.g-icon_dlg-script-error {
+    background-image: url("images/message/dlg-script-error.svg"); }
+
+/* Значок ошибки доступа */
+.g-icon_dlg-forbidden {
+    background-image: url("images/message/dlg-forbidden.svg"); }
+
+/* Значок ошибки запроса к серверу */
+.g-icon_dlg-request-error {
+    background-image: url("images/message/dlg-request-error.svg"); }
+
+/* Значок предупреждения */
+.g-icon_dlg-warning {
+    background-image: url("images/message/dlg-warning.svg"); }
+
+/* Значок ошибки */
+.g-icon_dlg-error {
+    background-image: url("images/message/dlg-error.svg"); }
+
+/* Значок успеха */
+.g-icon_dlg-accept,
+.g-icon_dlg-success {
+    background-image: url("images/message/dlg-accept.svg"); }
+
+/* Значок сообщения */
+.g-icon_dlg-message {
+    background-image: url("images/message/dlg-message.svg"); }
+
+/* Значок вопроса */
+.g-icon_dlg-question {
+    background-image: url("images/message/dlg-question.svg"); }
+
+
+/**
+ * Cтики ошибок и отладочная информации в окне сообщений.
+ * <div class="gear-stick-...">...
+ */
+.x-message-box .gear-stick,
+.x-form-display-field .gear-stick {
+    margin: 5px 0 5px 0; }
+
+/* Разделитель информации стика в окне сообщений */
+.x-message-box .gear-stick hr,
+.x-form-display-field .gear-stick hr {
+    border: 0 none;
+    border-top: 1px solid #727272; }
+
+/* Текст сообщения стика */
+.x-message-box .gear-stick-msg,
+.x-form-display-field .gear-stick-msg {
+    color: #727272; font-size: 13px; }
+
+/* Статус сообщения стика */
+.x-message-box .gear-stick-status,
+.x-form-display-field .gear-stick-status {
+    font-size: 14px; }
+
+/* Стик с ошибкой "warning" */
+.x-message-box .gear-stick-warning .gear-stick-status,
+.x-form-display-field .gear-stick-warning .gear-stick-status {
+    color: #ED7D31; }
+
+/* Стик с ошибкой "error" */
+.x-message-box .gear-stick-error .gear-stick-status,
+.x-form-display-field .gear-stick-error .gear-stick-status {
+    color: #CC4C33; }
+
+/* Стик с ошибкой "notice" */
+.x-message-box .gear-stick-notice .gear-stick-status,
+.x-form-display-field .gear-stick-notice .gear-stick-status {
+    color: #4472C4; }
+
+/* Стик с ошибкой "strict" */
+.x-message-box .gear-stick-strict .gear-stick-status,
+.x-form-display-field .gear-stick-strict .gear-stick-status {
+    color: #70AD47; }
+
+/* Стик с ошибкой "deprecated" */
+.x-message-box .gear-stick-deprecated .gear-stick-status,
+.x-form-display-field .gear-stick-deprecated .gear-stick-status {
+    color: #FFC7CE; }
+
+
+/**
+ * Всплывающие сообщение.
+ * Gear.app.popup
+ */
+.g-popup-msg {
+    z-index:20000;
+    position:absolute;
+    top:10px;
+    right: 0;
+    width:400px;
+    font-size: 14px; }
+
+/* Текст сообщения */
+.g-popup-msg__text {
+    -webkit-box-shadow: -3px 6px 14px -6px rgba(0,0,0,0.68);
+    -moz-box-shadow: -3px 6px 14px -6px rgba(0,0,0,0.68);
+    box-shadow: -3px 6px 14px -6px rgba(0,0,0,0.68);
+    background: #F6F6F6;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ccc;
+    margin-top: 2px;
+    padding: 10px 15px;
+    color: #555; }
+
+    .g-popup-msg__text h3 {
+        margin: 0 0 8px;
+        font-weight: bold;
+        font-size: 15px; }
+
+    .g-popup-msg__text p {
+        margin: 0; }
+
+/* Значки сообщения */
+.g-popup-msg__text .g-icon-svg,
+.g-popup-msg__text .g-icon-m {
+    padding-left: 45px;
+    background-size: 32px;
+    background-position: 5px center; }
+
+/**
+ * Текст в зависимости от типа сообщения.
+ * <div class="g-popup-msg__text [g-popup-msg__text_...]">...
+ */
+/* Ошибка */
+.g-popup-msg__text_error h3 {
+    color: #d86344; }

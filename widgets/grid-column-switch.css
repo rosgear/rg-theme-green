@@ -1,0 +1,84 @@
+/*!
+ * Виджет "Переключатель" столбца панели сетки или поля формы.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @widget    Ge.view.grid.column.Switch (@app/view/grid/column/Switch.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Контейнер переключателя в ячейке панели сетки.
+ * <label class="g-gridcolumn-switch [disabled] [hide]">...
+ */
+.g-gridcolumn-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px !important;
+    height: 16px;
+    visibility: visible !important; }
+
+    .g-gridcolumn-switch.disabled {
+        opacity: 0.3; }
+
+    .g-gridcolumn-switch.hide {
+        visibility: hidden; }
+
+    .g-gridcolumn-switch input {
+        display: none; }
+
+
+/**
+ * Переключатель.
+ * <span class="g-gridcolumn-switch-slider">...
+ */
+.g-gridcolumn-switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s; }
+
+    .g-gridcolumn-switch-slider:before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 1px;
+        bottom: 1px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s; }
+
+.g-gridcolumn-switch.disabled .g-gridcolumn-switch-slider {
+    cursor: inherit; }
+
+.g-gridcolumn-switch.checked .g-gridcolumn-switch-slider,
+input:checked + .g-gridcolumn-switch-slider {
+    background-color: #90B9A3; }
+
+input:focus + .g-gridcolumn-switch-slider {
+    box-shadow: 0 0 1px #76A797; }
+
+.g-gridcolumn-switch.checked .g-gridcolumn-switch-slider:before,
+input:checked + .g-gridcolumn-switch-slider:before {
+    -webkit-transform: translateX(23px);
+    -ms-transform: translateX(23px);
+    transform: translateX(23px);
+    background-color: #217346; }
+
+/* Rounded sliders */
+.g-gridcolumn-switch-slider {
+    border-radius: 34px; }
+
+    .g-gridcolumn-switch-slider:before {
+        border-radius: 50%; } 

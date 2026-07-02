@@ -1,0 +1,91 @@
+/*!
+ * Виджет вывода контактов.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets.Contacts
+ * @widget    Ge.view.grid.column.Contacts (@app/view/grid/column/Column.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Контейнер элементов (контактов).
+ * <div class="g-contacts">...
+ */
+.g-contacts {
+    padding: 0; }
+
+    .x-grid-cell .g-contacts {
+        text-align: left; }
+
+/**
+ * Элемент контакта контейнера.
+ * <span class="g-contacts__contact">...
+ */
+.g-contacts__contact { 
+    display: inline-block;
+    padding: 0 1px 0 1px; }
+
+/* детализация контакта */
+.g-contacts__contact__info {
+    display: none; }
+
+.g-contacts__contact_row {
+    display: block; }
+
+/* детализация контакта */
+.g-contacts__contact_row .g-contacts__contact__info {
+    display: inline-block; }
+
+/**
+ * Для панели навигации (Ge.view.navigator.Info),
+ * всплывающей подсказки ячейки сетки (Ge.view.grid.CellTip),
+ * поля контактов формы (Ge.view.form.field.DisplayContacts)
+ */
+.x-form-display-field .g-contacts__contact,
+.g-grid-celltip .g-contacts__contact,
+.g-navigator .g-contacts__contact {
+    display: block;
+    padding: 0; }
+
+.x-form-display-field .g-contacts__contact__info,
+.g-grid-celltip .g-contacts__contact__info,
+.g-navigator .g-contacts__contact__info { 
+    display: inline-block;
+    line-height: 2;
+    vertical-align: bottom; }
+
+/* Значки с маской в формате SVG (для совместного использования с "g-icon-m_color") */
+/* Социальные сети (social) */
+.g-icon-m_linkedin { background-image: url("../assets/icons/svg-mask/social/linkedin.svg"); }
+.g-icon-m_skype { background-image: url("../assets/icons/svg-mask/social/skype.svg"); }
+.g-icon-m_twitter { background-image: url("../assets/icons/svg-mask/social/twitter.svg"); }
+.g-icon-m_vk { background-image: url("../assets/icons/svg-mask/social/vk.svg"); }
+
+/* Значки в формате SVG */
+/* Социальные сети (social) */
+.g-icon_google-drive { background-image: url("../assets/icons/svg/social/google-drive.svg"); }
+.g-icon_messenger { background-image: url("../assets/icons/svg/social/messenger.svg"); }
+.g-icon_youtube { background-image: url("../assets/icons/svg/social/youtube.svg"); }
+.g-icon_facebook { background-image: url("../assets/icons/svg/social/facebook.svg"); }
+.g-icon_twitter { background-image: url("../assets/icons/svg/social/twitter.svg"); }
+.g-icon_whatsapp { background-image: url("../assets/icons/svg/social/whatsapp.svg"); }
+.g-icon_viber { background-image: url("../assets/icons/svg/social/viber.svg"); }
+.g-icon_vk { background-image: url("../assets/icons/svg/social/vk.svg"); }
+.g-icon_flickr { background-image: url("../assets/icons/svg/social/flickr.svg"); }
+.g-icon_vimeo { background-image: url("../assets/icons/svg/social/vimeo.svg"); }
+.g-icon_skype { background-image: url("../assets/icons/svg/social/skype.svg"); }
+.g-icon_instagram { background-image: url("../assets/icons/svg/social/instagram.svg"); }
+.g-icon_icq { background-image: url("../assets/icons/svg/social/icq.svg"); }
+.g-icon_telegram { background-image: url("../assets/icons/svg/social/telegram.svg"); }
+/* Контакты (contacts) */
+.g-icon_site { background-image: url("../assets/icons/svg/contacts/site.svg"); }
+.g-icon_phone { background-image: url("../assets/icons/svg/contacts/phone.svg"); }
+.g-icon_fax { background-image: url("../assets/icons/svg/contacts/fax.svg"); }
+.g-icon_post { background-image: url("../assets/icons/svg/contacts/post.svg"); }
+.g-icon_email { background-image: url("../assets/icons/svg/contacts/email.svg"); }
+.g-icon_address { background-image: url("../assets/icons/svg/contacts/address.svg"); }

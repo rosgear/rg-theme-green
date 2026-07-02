@@ -1,0 +1,109 @@
+/*!
+ * Рабочее пространство.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+@import 'navigator.css';
+@import 'signout.css';
+@import 'bootslide.css';
+@import 'partitionbar.css';
+@import 'traybar.css';
+@import 'mask.css';
+
+
+/**
+ * Область основного контейнера приложения.
+ * Ext.container.Viewport
+ * Ge.view.main.Main.cls = "g-workspace"
+ */
+body.g-workspace {
+    background-color: #E7E7E7;
+}
+
+
+/**
+ * Панель заголовка рабочей области.
+ * Ext.container.Container.cls = "g-header"
+ */
+.g-header {
+    width: 100%;
+}
+.g-header-top {
+    background-color: #217346;
+}
+/**
+ * Текст заголовка.
+ * <span class="g-header__title">...
+ */
+.g-header__title {
+    position: relative;
+    font-family: "Bauhaus Md BT", helvetica, arial, verdana, sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    color: #fff;
+    height: 37px;
+    float: left;
+    padding: 10px 15px 10px 10px;
+}
+.g-header__title:after {
+    content: ' ';
+    position: absolute;
+    border-right: 1px solid #e1e1e1;
+    right: 0;
+    top: 9px;
+    bottom: 9px;
+}
+.g-header__title span:first-child {
+    padding-right: 5px;
+}
+/**
+ * Текст активной вкладки.
+ * <span class="g-header__title-active">...
+ */
+.g-header__title-active {
+    color: #fff;
+    line-height: 37px;
+    margin-left: 15px;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/**
+ * Кнопка "Пуск" заголовка.
+ * <span class="g-header__title">...
+ */
+.g-header__button {
+    float: left;
+    width: 37px;
+    height: 37px;
+    background: url("../assets/icons/svg/menu/candybox.svg") no-repeat center;
+    border-right: 1px solid #629c7c;
+    transition: background-color 500ms linear;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.g-header__button:hover {
+    background-color: #329860;
+    opacity: 1;
+}
+
+
+/**
+ * Фон области панели.
+ * Ext.container.cls = "g-panel_background"
+ */
+ .g-panel_background {
+    background: #e7e7e7 url("images/background/panel-background.jpg") repeat left top;
+ }
+ .g-panel_background-color {
+    background-color: #e7e7e7;
+ }

@@ -1,0 +1,28 @@
+/*!
+ * Виджет главного меню.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @widget    Ge.view.main.Menu (@app/view/main/Menu.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Значки элементов меню.
+ */
+.g-icon_item-tabs-close { background-image: url("images/menu/item-tabs-close.svg"); }
+.g-icon_item-tab-close { background-image: url("images/menu/item-tab-close.svg"); }
+.g-icon_item-tab-next { background-image: url("images/menu/item-tab-next.svg"); }
+.g-icon_item-tab-prev { background-image: url("images/menu/item-tab-prev.svg"); }
+.g-icon_item-signout { background-image: url("images/menu/item-signout.svg"); }
+.g-icon_item-help { background-image: url("images/menu/item-help.svg"); }
+.g-icon_item-info { background-image: url("images/menu/item-info.svg"); }
+.g-icon_item-gear { background-image: url("images/menu/item-gear.svg"); }
+.g-icon_item-mp { background-image: url("images/menu/item-mp.svg"); }
+.g-icon_item-mp_catalog { background-image: url("images/menu/item-mp_catalog.svg"); }
+ 

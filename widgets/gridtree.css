@@ -1,0 +1,55 @@
+/*!
+ * Виджет дерева сетки.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @widget    Ge.view.grid.Tree (@app/view/grid/Tree.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Узел дерева сетки.
+ */
+.g-gridtree .x-tree-node-text {
+    font: normal 12px/16px helvetica, arial, verdana, sans-serif;
+    color: #666666; }
+
+
+/**
+ * Значки узлов дерева сетки.
+ */
+/* Значок ветки дерева */
+.g-gridtree .x-tree-icon-leaf {
+    background: url("images/gridtree/gridtree-node-leaf.svg") no-repeat center center; }
+/* Значок узла дерева */
+.g-gridtree .x-tree-icon-parent {
+    background: url("images/gridtree/gridtree-node-parent_small.svg") no-repeat center center; }
+/* Значок открытого узла дерева */
+.g-gridtree .x-grid-tree-node-expanded .x-tree-icon-parent {
+    background: url("images/gridtree/gridtree-node-parent--open_small.svg") no-repeat center center; }
+
+
+/**
+ * Панель инструментов дерева сетки.
+ * Ge.view.grid.Tree.toolbar
+ */
+/* Значок ветки дерева */
+.g-icon_gridtree-node-leaf_large,
+.g-icon_gridtree-node-leaf_medium,
+.g-icon_gridtree-node-leaf,
+.g-icon_gridtree-node-leaf_small { background-image: url("images/gridtree/gridtree-node-leaf.svg"); }
+ /* Значок узла дерева */
+.g-icon_gridtree-node-parent_large,
+.g-icon_gridtree-node-parent_medium,
+.g-icon_gridtree-node-parent { background-image: url("images/gridtree/gridtree-node-parent.svg"); }
+.g-icon_gridtree-node-parent_small { background-image: url("images/gridtree/gridtree-node-parent_small.svg"); }
+ /* Значок открытого узла дерева */
+.g-icon_gridtree-node-parent--open_large,
+.g-icon_gridtree-node-parent--open_medium,
+.g-icon_gridtree-node-parent--open { background-image: url("images/gridtree/gridtree-node-parent--open.svg"); }
+.g-icon_gridtree-node-parent--open_small { background-image: url("images/gridtree/gridtree-node-parent--open_small.svg"); }

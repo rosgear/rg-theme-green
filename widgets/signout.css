@@ -1,0 +1,155 @@
+/*!
+ * Виджет панели выхода.
+ * 
+ * Этот файл является частью GePanel.
+ * 
+ * @package   Widgets
+ * @widget    Ge.Application.signout (@app/Application.js)
+ * @author    Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @version   1.0 Green Theme
+ * @copyright RosGear (https://rosgear.ru/)
+ * @license   https://rosgear.ru/license/
+ * @date      Oct 01, 2017
+ */
+
+/**
+ * Панель выхода.
+ * <div class="g-signout [g-signout_mask]">...
+ */
+.g-signout {
+    display: none;
+    z-index: 10000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Фон панели */
+.g-signout_background {
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(89%, rgba(33,115,70,1)), color-stop(91%, rgba(33,115,70,1))); /* safari4+,chrome */
+    background:-webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(33,115,70,1) 89%, rgba(33,115,70,1) 91%); /* safari5.1+,chrome10+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(33,115,70,1) 89%, rgba(33,115,70,1) 91%); /* opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(33,115,70,1) 89%, rgba(33,115,70,1) 91%); /* ie10+ */
+    background:radial-gradient(ellipse at center, rgba(255,255,255,0.8) 0%, rgba(33,115,70,1) 89%, rgba(33,115,70,1) 91%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#217346',GradientType=1 ); /* ie6-9 */ 
+}
+
+
+/**
+ * Показать панель выхода.
+ * <div class="g-signout [g-signout_mask] g-signout--show">...
+ */
+.g-signout--show {
+    display: block;
+}
+.g-signout--show .g-signout__inner {
+    opacity: 1;
+}
+
+
+/**
+ * Обёртка панели выхода.
+ */
+.g-signout__inner {
+    opacity: 0;
+    transition: all 2s linear;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+
+/**
+ * Заголовок панели выхода.
+ */
+.g-signout__title {
+    text-shadow: 1px 1px 2px #333, 0 0 1em #217346;
+    color: #fff;
+    font:54px "Bauhaus Md BT",arial,tahoma,sans-serif;
+}
+.g-signout__title span:first-child {
+    padding: 0 5px 0 5px;
+}
+/* Copyright */
+.g-signout__title-cr {
+    vertical-align: top;
+    font-size: 12px;
+}
+
+/**
+ * Тело панели выхода.
+ */
+.g-signout__body {
+    padding: 20px;
+}
+.g-signout__body .icon {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    width: 90px;
+    height: 90px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transform: scale(0.7);
+    transition: all 0.3s;
+    color: #333;
+    text-decoration: none;
+    float: left;
+}
+.g-signout__body .icon.icon-account {
+    background-image: url(images/form/icon-signout-account.png);
+}
+.g-signout__body .icon.icon-back { background-image: url(images/form/icon-signout-back.png); }
+.g-signout__body .icon.icon-turnoff { background-image: url(images/form/icon-signout-turnoff.png); }
+.g-signout__body .icon:hover { transform: scale(1); }
+.g-signout__body .icon > span {
+    opacity: 0;
+    position: relative;
+    left: 0;
+    bottom: -100px;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.g-signout__body .icon:hover > span { opacity: 1; }
+.g-signout__btn {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+    font: normal 13px/16px "Roboto Condensed", helvetica, arial, verdana, sans-serif;
+    text-transform: uppercase;
+    padding-top: 85px;
+    vertical-align: bottom;
+    background-size: 49px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+    cursor: pointer;
+    color: #797979;
+}
+.g-signout__btn span {
+    display: none;
+}
+.g-signout__btn:hover {
+    background-size: 77px;
+}
+.g-signout__btn:hover span { 
+    display: block;
+}
+
+/* Значок настройки модулей */
+.g-signout__btn-exit {
+    background-image: url("images/signout/btn-exit.svg");
+    
+}
+.g-signout__btn-account {
+    background-image: url("images/signout/btn-account.svg");
+}
+.g-signout__btn-back {
+    background-image: url("images/signout/btn-back.svg");
+}
